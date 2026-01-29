@@ -52,7 +52,3 @@ nbproject/*
 # yarn
 yarn-debug.log
 yarn-error.log
-
-# Ignore semua SQL kecuali file export
-*.sql
-!database/ppoappointment.sql
