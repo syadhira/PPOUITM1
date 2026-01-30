@@ -60,6 +60,12 @@ class DashboardsController extends AppController
 		$total_faq = $faqs->find()->all()->count();
 		$pending_faq = $faqs->find()->where(['status' => 1])->count();
 		$pending_faq_percent = $pending_faq * 100 / $total_faq;
+		//count Approved Aplications
+		// $this->fetchTable('Applications');
+        $applications = $this->fetchTable('Applications');
+		$total_app = $applications -> find()->all()->count();
+		$approved_app = $applications -> find()->where(['approval_status' => 1])->count();
+		$approval_app_percent = $approved_app * 100 / $total_app;
 
 		//get current authenticate user
 		$userdetail = $this->request->getAttribute('identity');
@@ -119,6 +125,6 @@ class DashboardsController extends AppController
 			'_serialize' => ['results']
 		]);
 
-		$this->set(compact('total_user', 'total_contact', 'total_auditlog', 'total_todo', 'user_percent', 'pending_todo_percent', 'pending_faq_percent', 'pending_contact_percent', 'userLogs', 'formattedResults', 'totalActivityByMonth', 'todo_list'));
+		$this->set(compact('total_user', 'total_contact', 'total_auditlog', 'total_todo', 'user_percent', 'pending_todo_percent', 'pending_faq_percent', 'pending_contact_percent', 'userLogs', 'formattedResults', 'totalActivityByMonth', 'todo_list','approval_app_percent'));
 	}
 }

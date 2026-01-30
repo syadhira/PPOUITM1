@@ -87,7 +87,13 @@ class ApplicationsTable extends Table
 		$this->addBehavior('Search.Search');
 		$this->searchManager()
 			->value('id')
-				->add('search', 'Search.Like', [
+            ->value('approval_status')
+            ->value('faculty_id')
+            ->value('user_id')
+            ->value('program_id')
+            ->value('appointment_id')
+            ->value('branch_id')
+				->add('approval_status', 'Search.Like', [
 					//'before' => true,
 					//'after' => true,
 					'fieldMode' => 'OR',
@@ -96,8 +102,16 @@ class ApplicationsTable extends Table
 					'comparison' => 'LIKE',
 					'wildcardAny' => '*',
 					'wildcardOne' => '?',
-					'fields' => ['id'],
-				]);
+					'fields' => ['approval_status'],
+				])
+                ->add('application_date_from', 'Search.Compare',[
+                    'fields' => [$this->aliasField('application_date')],
+                    'operator' => '>='
+                ])
+                ->add('application_date_to', 'Search.Compare',[
+                    'fields' => [$this->aliasField('application_date')],
+                    'operator' => '<='
+                ]);
     }
 
     /**

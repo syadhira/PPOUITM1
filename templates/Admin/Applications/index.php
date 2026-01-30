@@ -363,6 +363,46 @@ const status = new Chart(ctx_2, {
 			<?php echo $this->Form->create(null, ['valueSources' => 'query', 'url' => ['controller' => 'Applications','action' => 'index']]); ?>
 				<fieldset>
 					<div class="mb-1"><?php echo $this->Form->control('id',['required' => false]); ?></div>
+					<div class="mb-1"><?php echo $this->Form->control('user_id', [
+                                'options' => $users,
+                                'empty' => 'Select User',
+                                'class '=>'form-select']); ?></div>
+					<div class="mb-1"><?php echo $this->Form->control('faculty_id', [
+                                'options' => $faculties,
+                                'empty' => 'Select Faculty/College',
+                                'class '=>'form-select']); ?></div>
+					<div class="mb-1"><?php echo $this->Form->control('program_id', [
+                                'options' => $programs,
+                                'empty' => 'Select Program',
+                                'class '=>'form-select']); ?></div>
+					<div class="mb-1"><?php echo $this->Form->control('appointment_id', [
+                                'options' => $appointments,
+                                'empty' => 'Select Appointment',
+                                'class '=>'form-select']); ?></div>
+					<div class="mb-1"><?php echo $this->Form->control('branch_id', [
+                                'options' => $branches,
+                                'empty' => 'Select Branch',
+                                'class '=>'form-select']); ?></div>
+					<div class="mb-1">
+						<?php 
+						echo $this->Form->label('Approval Status');
+						echo '<br/>';
+						$options = [
+							'0' => 'Pending',
+							'1' => 'Approved',
+							'2' => 'Rejected'
+						];
+						echo $this->Form->select('approval_status', $options, [
+							'multiple' => 'checkbox',
+							'class' => 'form-check-input'
+
+						]);
+						?>
+					</div>
+					<div class="mb-1">
+						<?php echo $this->Form->control('application_date_from',['label'=> 'Application Date From', 'type' => 'date']);?>
+					</div>
+					<div class="mb-1"><?php echo $this->Form->control('application_date_to',['label'=> 'Application Date To', 'type' => 'date']);?></div>
 				</fieldset>
 		<div class="text-end">
 			<?php 

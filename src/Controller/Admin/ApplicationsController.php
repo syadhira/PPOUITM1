@@ -163,8 +163,27 @@ class ApplicationsController extends AppController
             $monthArray[] = $data['month'];
             $countArray[] = $data['count'];
         }
+         $users = $this->Applications->Users->find('list', ['limit' => 200])->all();
+        $faculties = $this->Applications->Faculties->find('list', ['limit' => 200])->all();
+    
+         $programs = $this->Applications->Programs->find('list', ['keyfield' => 'id','valueField' => function ($programs) {
+             return $programs->code . ' : ' . $programs->name; 
+             }, 'limit' => 200])->all();
 
-        $this->set(compact('applications', 'monthArray', 'countArray'));
+        $appointments = $this->Applications->Appointments->find('list', ['keyfield' => 'id','valueField' => function ($appointments) {
+             return $appointments->code . ' : ' . $appointments->session; 
+             }, 'limit' => 200])->all();
+
+             
+        $branches = $this->Applications->Branches->find('list', [
+            'keyField' => 'id',
+            'valueField' => function ($branch) {
+                return $branch->code . ' : ' . $branch->session;
+            },
+            'limit' => 200
+        ])->all();
+        $this->set(compact('applications', 'users', 'faculties', 'programs', 'appointments', 'branches','monthArray', 'countArray'));
+        
     }
 
     /**

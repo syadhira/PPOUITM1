@@ -249,8 +249,8 @@ echo $this->Html->script('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/
 					</div>
 				</div>
 				<div class="col-md-3 ps-5">
-					<div class="faq" data-waffly-title="Total Active FAQ" data-waffly-value="<?php echo $pending_faq_percent; ?>%">
-						<div class="title">Total Active FAQ</div>
+					<div class="faq" data-waffly-title="Total Active FAQ" data-waffly-value="<?php echo $approval_app_percent; ?>%">
+						<div class="title">Total Approved Application</div>
 						<meter class="faq" value="50" max="100"></meter>
 					</div>
 				</div>
