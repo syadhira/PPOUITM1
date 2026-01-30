@@ -78,16 +78,16 @@
             <col-md-6> <?php echo $this->Form->control('pic_email',['label' => 'Person In-Charge Email']); ?></col-md-6>
          </div>           
           
-         <?php echo $this->Form->control('company_name',['label' => 'Purposed Company Name']); ?>
+         <?php echo $this->Form->control('company_name',['label' => 'Appointed Branch name']); ?>
 
       <div class="row">
-        <div class="col-md-6"> <?php echo $this->Form->control('company_street1',['label' => 'Company Street 1']); ?></div>
-        <div class="col-md-6"><?php echo $this->Form->control('company_street2',['label' => 'Company Street 2']); ?></div>
+        <div class="col-md-6"> <?php echo $this->Form->control('company_street1',['label' => 'Street 1']); ?></div>
+        <div class="col-md-6"><?php echo $this->Form->control('company_street2',['label' => 'Street 2']); ?></div>
       </div>             
 
       <div class="row">
-        <div class="col-md-4"><?php echo $this->Form->control('company_postcode',['label' => 'Company Postcode']); ?></div>
-        <div class="col-md-4"><?php echo $this->Form->control('company_city',['label' => 'Company City']); ?></div>
+        <div class="col-md-4"><?php echo $this->Form->control('company_postcode',['label' => 'Postcode']); ?></div>
+        <div class="col-md-4"><?php echo $this->Form->control('company_city',['label' => 'City']); ?></div>
         <div class="col-md-4"><?php echo $this->Form->control('company_state',[
             'options' => [
                 'Johor'=>'Johor',
