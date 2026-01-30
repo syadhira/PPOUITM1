@@ -33,7 +33,7 @@ use Cake\ORM\Entity;
  * @property int $status
  * @property string $approval_name
  * @property string $approval_post
- * @property int $approval_satus
+ * @property int $approval_status
  * @property string $ref_no
  * @property \Cake\I18n\DateTime $created
  * @property \Cake\I18n\DateTime $modified

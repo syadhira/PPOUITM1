@@ -68,7 +68,7 @@
                     <th><?= $this->Paginator->sort('id','Applicant Details') ?></th>
                     <th><?= $this->Paginator->sort('application_date') ?></th>
                     <th><?= $this->Paginator->sort('company_name') ?></th>
-					<th><?= $this->Paginator->sort('approval_satus') ?></th>
+					<th><?= $this->Paginator->sort('approval_status') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>

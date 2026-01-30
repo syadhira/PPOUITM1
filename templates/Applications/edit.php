@@ -64,7 +64,7 @@
                     <?php echo $this->Form->control('status'); ?>
                     <?php echo $this->Form->control('approval_name'); ?>
                     <?php echo $this->Form->control('approval_post'); ?>
-                    <?php echo $this->Form->control('approval_satus'); ?>
+                    <?php echo $this->Form->control('approval_status'); ?>
                     <?php echo $this->Form->control('ref_no'); ?>
                
             </fieldset>

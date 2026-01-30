@@ -101,7 +101,7 @@
                             <th><?= __('Status') ?></th>
                             <th><?= __('Approval Name') ?></th>
                             <th><?= __('Approval Post') ?></th>
-                            <th><?= __('Approval Satus') ?></th>
+                            <th><?= __('Approval Status') ?></th>
                             <th><?= __('Ref No') ?></th>
                             <th><?= __('Created') ?></th>
                             <th><?= __('Modified') ?></th>
@@ -134,7 +134,7 @@
                             <td><?= h($applications->status) ?></td>
                             <td><?= h($applications->approval_name) ?></td>
                             <td><?= h($applications->approval_post) ?></td>
-                            <td><?= h($applications->approval_satus) ?></td>
+                            <td><?= h($applications->approval_status) ?></td>
                             <td><?= h($applications->ref_no) ?></td>
                             <td><?= h($applications->created) ?></td>
                             <td><?= h($applications->modified) ?></td>

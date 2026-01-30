@@ -44,7 +44,7 @@ class ApplicationsFixture extends TestFixture
                 'status' => 1,
                 'approval_name' => 'Lorem ipsum dolor sit amet',
                 'approval_post' => 'Lorem ipsum dolor sit a',
-                'approval_satus' => 1,
+                'approval_status' => 1,
                 'ref_no' => 'Lorem ipsum dolor sit amet',
                 'created' => '2026-01-26 15:40:42',
                 'modified' => '2026-01-26 15:40:42',
