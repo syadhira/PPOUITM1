@@ -248,6 +248,15 @@ class ApplicationsController extends AppController
         }
         $users = $this->Applications->Users->find('list', ['limit' => 200])->all();
         $faculties = $this->Applications->Faculties->find('list', ['limit' => 200])->all();
+        $allPrograms = $this->Applications->Programs->find('all', ['limit' => 200])->toArray();
+        $programsData = [];
+        foreach ($allPrograms as $program) {
+            $programsData[$program->id] = [
+                'id' => $program->id,
+                'faculty_id' => $program->faculty_id,
+                'text' => $program->code . ' : ' . $program->name
+            ];
+        }
         $programs = $this->Applications->Programs->find('list', [
             'keyField' => 'id',
             'valueField' => function ($program) {
@@ -269,7 +278,7 @@ class ApplicationsController extends AppController
             },
             'limit' => 200
         ])->all();
-        $this->set(compact('application', 'users', 'faculties', 'programs', 'appointments', 'branches'));
+        $this->set(compact('application', 'users', 'faculties', 'programs', 'programsData', 'appointments', 'branches'));
     }
 
     /**
@@ -305,6 +314,15 @@ class ApplicationsController extends AppController
         }
 		$users = $this->Applications->Users->find('list', limit: 200)->all();
 		$faculties = $this->Applications->Faculties->find('list', limit: 200)->all();
+		$allPrograms = $this->Applications->Programs->find('all', ['limit' => 200])->toArray();
+		$programsData = [];
+		foreach ($allPrograms as $program) {
+			$programsData[$program->id] = [
+				'id' => $program->id,
+				'faculty_id' => $program->faculty_id,
+				'text' => $program->code . ' : ' . $program->name
+			];
+		}
 		$programs = $this->Applications->Programs->find('list', limit: 200)->all();
 		$appointments = $this->Applications->Appointments->find('list', limit: 200)->all();
         $branches = $this->Applications->Branches->find('list', [
@@ -314,7 +332,7 @@ class ApplicationsController extends AppController
             },
             'limit' => 200
         ])->all();
-        $this->set(compact('application', 'users', 'faculties', 'programs', 'appointments', 'branches'));
+        $this->set(compact('application', 'users', 'faculties', 'programs', 'programsData', 'appointments', 'branches'));
     }
 
     /**

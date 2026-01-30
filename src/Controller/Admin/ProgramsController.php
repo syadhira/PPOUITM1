@@ -84,7 +84,7 @@ class ProgramsController extends AppController
 			'maxLimit' => 10,
         ];
         $query = $this->Programs->find('search', search: $this->request->getQueryParams())
-            ->contain(['Faculties']);
+                ->contain(['Faculties']);
 			//->where(['title IS NOT' => null])
         $programs = $this->paginate($query);
 		

@@ -45,10 +45,12 @@
                     <div class="col-md-6"> <?php echo $this->Form->control('faculty_id', [
                                 'options' => $faculties,
                                 'empty' => 'Select Faculty/College',
+                                'id' => 'faculty-select',
                                 'class '=>'form-select']); ?></div>
                     <div class="col-md-6"> <?php echo $this->Form->control('program_id', [
                                 'options' => $programs,
                                 'empty' => 'Select Program',
+                                'id' => 'program-select',
                                 'class '=>'form-select']); ?></div>
                 </div>  
                    
@@ -122,3 +124,53 @@
         <?= $this->Form->end() ?>
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const facultySelect = document.getElementById('faculty-select');
+    const programSelect = document.getElementById('program-select');
+    
+    // Program data with faculty associations
+    const programsData = <?php echo json_encode($programsData); ?>;
+    
+    function filterPrograms() {
+        const selectedFacultyId = facultySelect.value;
+        
+        // Clear current options except the empty one
+        const emptyOption = programSelect.querySelector('option[value=""]');
+        programSelect.innerHTML = '';
+        if (emptyOption) {
+            programSelect.appendChild(emptyOption.cloneNode(true));
+        }
+        
+        // Add filtered programs
+        if (selectedFacultyId) {
+            Object.keys(programsData).forEach(id => {
+                const program = programsData[id];
+                if (String(program.faculty_id) === selectedFacultyId) {
+                    const option = document.createElement('option');
+                    option.value = program.id;
+                    option.text = program.text;
+                    programSelect.appendChild(option);
+                }
+            });
+        } else {
+            // Show all programs if no faculty selected
+            Object.keys(programsData).forEach(id => {
+                const program = programsData[id];
+                const option = document.createElement('option');
+                option.value = program.id;
+                option.text = program.text;
+                programSelect.appendChild(option);
+            });
+        }
+    }
+    
+    facultySelect.addEventListener('change', filterPrograms);
+    
+    // Initial filter on page load if faculty is pre-selected (edit mode)
+    if (facultySelect.value) {
+        filterPrograms();
+    }
+});
+</script>

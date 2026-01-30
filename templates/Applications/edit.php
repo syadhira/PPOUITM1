@@ -41,8 +41,8 @@
                 <legend><?= __('Edit Application') ?></legend>
                 
                     <?php echo $this->Form->control('user_id', ['options' => $users]); ?>
-                    <?php echo $this->Form->control('faculty_id', ['options' => $faculties]); ?>
-                    <?php echo $this->Form->control('program_id', ['options' => $programs]); ?>
+                    <?php echo $this->Form->control('faculty_id', ['options' => $faculties, 'id' => 'faculty-select']); ?>
+                    <?php echo $this->Form->control('program_id', ['options' => $programs, 'id' => 'program-select']); ?>
                     <?php echo $this->Form->control('appointment_id', ['options' => $appointments]); ?>
                     <?php echo $this->Form->control('branch_id', ['options' => $branches]); ?>
                     <?php echo $this->Form->control('application_date'); ?>
@@ -75,3 +75,60 @@
         <?= $this->Form->end() ?>
     </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const facultySelect = document.getElementById('faculty-select');
+    const programSelect = document.getElementById('program-select');
+    
+    // Program data with faculty associations
+    const programsData = <?php echo json_encode($programsData); ?>;
+    
+    function filterPrograms() {
+        const selectedFacultyId = facultySelect.value;
+        const selectedProgramId = programSelect.value; // Save current selection
+        
+        // Clear current options except the empty one
+        const emptyOption = programSelect.querySelector('option[value=""]');
+        programSelect.innerHTML = '';
+        if (emptyOption) {
+            programSelect.appendChild(emptyOption.cloneNode(true));
+        }
+        
+        // Add filtered programs
+        if (selectedFacultyId) {
+            Object.keys(programsData).forEach(id => {
+                const program = programsData[id];
+                if (String(program.faculty_id) === selectedFacultyId) {
+                    const option = document.createElement('option');
+                    option.value = program.id;
+                    option.text = program.text;
+                    if (program.id == selectedProgramId) {
+                        option.selected = true;
+                    }
+                    programSelect.appendChild(option);
+                }
+            });
+        } else {
+            // Show all programs if no faculty selected
+            Object.keys(programsData).forEach(id => {
+                const program = programsData[id];
+                const option = document.createElement('option');
+                option.value = program.id;
+                option.text = program.text;
+                if (program.id == selectedProgramId) {
+                    option.selected = true;
+                }
+                programSelect.appendChild(option);
+            });
+        }
+    }
+    
+    facultySelect.addEventListener('change', filterPrograms);
+    
+    // Initial filter on page load if faculty is pre-selected (edit mode)
+    if (facultySelect.value) {
+        filterPrograms();
+    }
+});
+</script>
