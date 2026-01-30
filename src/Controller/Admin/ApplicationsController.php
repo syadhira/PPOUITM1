@@ -219,6 +219,7 @@ class ApplicationsController extends AppController
         $application = $this->Applications->newEmptyEntity();
         if ($this->request->is('post')) {
             $application = $this->Applications->patchEntity($application, $this->request->getData());
+            $application->user_id = $this->Authentication->getIdentity()->getIdentifier();
             if ($this->Applications->save($application)) {
                 $this->Flash->success(__('The application has been saved.'));
 
