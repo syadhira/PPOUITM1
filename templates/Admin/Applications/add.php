@@ -68,7 +68,7 @@
                    </div>
                    
                    
-    <div class="card-title mb-0 mt-3">Proposed Company Details</div>
+    <div class="card-title mb-0 mt-3">Branch Details</div>
 <div class="tricolor_line mb-3"></div>
 
 
