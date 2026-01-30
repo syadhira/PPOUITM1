@@ -110,7 +110,7 @@
         <br /><br />
         <strong>Untuk Perhatian : <?= h($application->pic_name) ?> (<?= h($application->pic_email) ?>)</strong>
         <br /><br />
-         <strong>PENEMPATAN PEKERJA PENGURUSAN PEJABAT (PPO) UNIVERSITI TEKNOLOGI MARA (UITM)</strong>
+         <strong>PENEMPATAN PROGRAM PROFESSIONAL OFFERED (PPO) UNIVERSITI TEKNOLOGI MARA (UITM)</strong>
         <br /><br />
         <table class="table table-bordered table-sm capital table_transparent capital">
 <tr>
@@ -148,16 +148,15 @@
 <br/>
 
 <div class="justify">
-    Dengan segala hormatnya saya merujuk kepada perkara di atas. Saya ingin memaklumkan bahawa pihak universiti telah meluluskan permohonan penempatan Program Professional Offered (PPO) seperti butiran di atas di kampus <?= h($application->branch->name) ?>.
+    Dengan segala hormatnya saya merujuk kepada perkara di atas. Saya ingin memaklumkan bahawa pihak universiti telah meluluskan permohonan penempatan Program Professional Offered (PPO) seperti butiran di atas. <?= h($application->branch->name) ?>.
     <br /><br />
     2.&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; Berdasarkan rekod kami, penempatan ini adalah untuk tempoh <strong><?php echo date('d F Y', strtotime($application->start_date)) ?></strong> hingga <strong><?php echo date('d F Y', strtotime($application->end_date)) ?></strong>. Sepanjang tempoh penempatan ini, pihak universiti akan memastikan bahawa pengajar yang ditempatkan di program <?= h($application->program->name) ?> akan mematuhi segala peraturan dan etika yang telah ditetapkan oleh pihak UiTM.
     <br /><br />
     3. &nbsp; &nbsp; &nbsp; &nbsp; Sehubungan itu, pihak kami amat berbesar hati sekiranya pihak tuan/puan dapat memberikan kerjasama sepenuhnya kepada pengajar yang ditempatkan di program ini. Segala bentuk bantuan dan sokongan daripada pihak tuan/puan akan sangat dihargai bagi memastikan kelancaran pelaksanaan program ini.
      <br /><br />
      <ol type="a">
-        <li>&nbsp; &nbsp; &nbsp; &nbsp; Resume: Link</li>
+        <li>&nbsp; &nbsp; &nbsp; &nbsp; Surat pelantikan rasmi</li>
         <li>&nbsp; &nbsp; &nbsp; &nbsp; Penempatan ini adalah tertakluk kepada terma dan syarat yang telah ditetapkan oleh pihak universiti.</li>
-        <li>&nbsp; &nbsp; &nbsp; &nbsp; Borang penerimaan</li>
      </ol>
     4. &nbsp; &nbsp; &nbsp; &nbsp; Diharapkan pelantikan ini akan mendapat pertimbangan dan kerjasama daripada pihak tuan/puan. Sekiranya terdapat sebarang pertanyaan atau maklumat lanjut, pihak tuan/puan boleh menghubungi pihak kami melalui emel ppo@uitm.edu.my. Sekiranya tiada sebarang jawapan diterima dalam tempoh dua (2) minggu dari tarikh surat ini, penempatan ini dianggap tidak diterima.
       <br /><br />
