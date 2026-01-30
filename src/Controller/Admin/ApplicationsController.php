@@ -229,9 +229,27 @@ class ApplicationsController extends AppController
         }
         $users = $this->Applications->Users->find('list', ['limit' => 200])->all();
         $faculties = $this->Applications->Faculties->find('list', ['limit' => 200])->all();
-        $programs = $this->Applications->Programs->find('list', ['limit' => 200])->all();
-        $appointments = $this->Applications->Appointments->find('list', ['limit' => 200])->all();
-        $branches = $this->Applications->Branches->find('list', ['limit' => 200])->all();
+        $programs = $this->Applications->Programs->find('list', [
+            'keyField' => 'id',
+            'valueField' => function ($program) {
+                return $program->code . ' : ' . $program->name;
+            },
+            'limit' => 200
+        ])->all();
+        $appointments = $this->Applications->Appointments->find('list', [
+            'keyField' => 'id',
+            'valueField' => function ($appointment) {
+                return $appointment->code . ' : ' . $appointment->session;
+            },
+            'limit' => 200
+        ])->all();
+        $branches = $this->Applications->Branches->find('list', [
+            'keyField' => 'id',
+            'valueField' => function ($branch) {
+                return $branch->code . ' : ' . $branch->session;
+            },
+            'limit' => 200
+        ])->all();
         $this->set(compact('application', 'users', 'faculties', 'programs', 'appointments', 'branches'));
     }
 
@@ -270,7 +288,13 @@ class ApplicationsController extends AppController
 		$faculties = $this->Applications->Faculties->find('list', limit: 200)->all();
 		$programs = $this->Applications->Programs->find('list', limit: 200)->all();
 		$appointments = $this->Applications->Appointments->find('list', limit: 200)->all();
-		$branches = $this->Applications->Branches->find('list', limit: 200)->all();
+        $branches = $this->Applications->Branches->find('list', [
+            'keyField' => 'id',
+            'valueField' => function ($branch) {
+                return $branch->code . ' : ' . $branch->session;
+            },
+            'limit' => 200
+        ])->all();
         $this->set(compact('application', 'users', 'faculties', 'programs', 'appointments', 'branches'));
     }
 
