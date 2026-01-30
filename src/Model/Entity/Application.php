@@ -80,7 +80,11 @@ class Application extends Entity
         'status' => true,
         'approval_name' => true,
         'approval_post' => true,
+<<<<<<< HEAD
         'approval_status' => true,
+=======
+        'approval_satus' => true,
+>>>>>>> 925573b5c4276ebea917cb88e1ab193b545a24a9
         'ref_no' => true,
         'created' => true,
         'modified' => true,
