@@ -47,7 +47,7 @@ class DashboardsController extends AppController
 		$todos = $this->fetchTable('Todos');
 		$total_todo = $todos->find()->all()->count();
 		$pending_todo = $todos->find()->where(['status' => 'Pending'])->count();
-		$pending_todo_percent = $pending_todo * 100 / $total_todo;
+		$pending_todo_percent = $total_todo > 0 ? ($pending_todo * 100 / $total_todo) : 0;
 
 		//to do task list
 		$todo_list = $todos->find('all')
@@ -65,7 +65,7 @@ class DashboardsController extends AppController
         $applications = $this->fetchTable('Applications');
 		$total_app = $applications -> find()->all()->count();
 		$approved_app = $applications -> find()->where(['approval_status' => 1])->count();
-		$approval_app_percent = $approved_app * 100 / $total_app;
+		$approval_app_percent = $total_app > 0 ? ($approved_app * 100 / $total_app) : 0;
 
 		//get current authenticate user
 		$userdetail = $this->request->getAttribute('identity');
