@@ -36,7 +36,7 @@ $a_name = $this->request->getParam('action');
                     <?= $this->Html->link(__('<i class="menu-icon fa-solid fa-user-tie"></i> Profile'), ['controller' => 'Users', 'action' => 'profile', 'prefix' => false, $this->Identity->get('slug')], ['class' => 'menu-link', 'escape' => false]) ?>
                 </li>
 
-                <li class="menu-item <?= $c_name == 'Applications' && $a_name == 'index' ? 'active' : '' ?>">
+                <li class="menu-item <?= $c_name == 'Applications' && $a_name == 'index' && $this->request->getParam('prefix') !== 'Admin' ? 'active' : '' ?>">
                     <?= $this->Html->link(__('<i class="menu-icon fa-solid fa-folder"></i> Applications'), ['controller' => 'Applications', 'action' => 'index', 'prefix' => false], ['class' => 'menu-link', 'escape' => false]) ?>
                 </li>
                 <?php if ($this->Identity->isLoggedIn() && $this->Identity->get('user_group_id') == '1') { ?>
@@ -68,7 +68,7 @@ $a_name = $this->request->getParam('action');
                     <li class="menu-item <?= $c_name == 'Faqs' && $a_name == 'index' ? 'active' : '' ?>">
                         <?= $this->Html->link(__('<i class="menu-icon fa-regular fa-circle-question"></i> FAQ'), ['prefix' => 'Admin', 'controller' => 'Faqs', 'action' => 'index'], ['class' => 'menu-link', 'escape' => false]) ?>
                     </li>
-                    <li class="menu-item <?= $c_name == 'Applications' && $a_name == 'index' ? 'active' : '' ?>">
+                    <li class="menu-item <?= $this->request->getParam('prefix') === 'Admin' && $c_name == 'Applications' && $a_name == 'index' ? 'active' : '' ?>">
                         <?= $this->Html->link(__('<i class="menu-icon fa-solid fa-file-circle-plus"></i> Applications <span class="badge text-bg-warning">' .  $total_applications_pending . '</span>'), ['prefix' => 'Admin', 'controller' => 'Applications', 'action' => 'index'], ['class' => 'menu-link', 'escape' => false]) ?>
                     </li>
                     <li class="menu-item <?= $c_name == 'Faculties' && $a_name == 'index' ? 'active' : '' ?>">
