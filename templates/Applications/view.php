@@ -94,7 +94,7 @@
                         echo'-';
                     }elseif ($application->approval_status == 1){
                         echo date('d F Y', strtotime($application->created));
-                    }else
+                    }else 
                         echo 'Rejected';
                     ?>
                 </td>
@@ -116,7 +116,7 @@
         <br /><br />
         <strong>Untuk Perhatian : <?= h($application->pic_name) ?> (<?= h($application->pic_email) ?>)</strong>
         <br /><br />
-         <strong>PENEMPATAN PEKERJA PENGURUSAN PEJABAT (PPO) UNIVERSITI TEKNOLOGI MARA (UITM)</strong>
+         <strong>PENEMPATAN PROGRAM PROFFESIONAL OFFERED (PPO) UNIVERSITI TEKNOLOGI MARA (UITM)</strong>
         <br /><br />
         <table class="table table-bordered table-sm capital table_transparent capital">
 <tr>
