@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 28, 2026 at 06:10 PM
+-- Generation Time: Feb 01, 2026 at 05:50 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -64,9 +64,8 @@ CREATE TABLE `applications` (
 --
 
 INSERT INTO `applications` (`id`, `user_id`, `faculty_id`, `program_id`, `appointment_id`, `branch_id`, `application_date`, `phone`, `nric`, `matrix`, `pic_name`, `pic_email`, `company_name`, `company_street1`, `company_street2`, `company_postcode`, `company_city`, `company_state`, `start_date`, `end_date`, `cv`, `cv_dir`, `status`, `approval_name`, `approval_post`, `approval_status`, `ref_no`, `created`, `modified`) VALUES
-(1, 1, 1, 1, 2, 1, '2026-01-26', '0175595094', '123456789', '2025180137', 'Aisyah Nadhirah binti Ahamad Khairi', 'aisyahnadhiraha@gmail.com', 'Code The Pixel', '59 A,JALAN BELAKANG MASJID', 'KAMPUNG SELARONG', '33100', 'PENGKALAN HULU', 'Perak', '2026-03-01', '2026-08-31', 'AR GUIDE PUNCAK PERDANA.pdf', 'webroot\\files\\Applications\\cv\\', 0, '', '', 0, 'UiTM-S1(HEA-CDIM.CDIM262/1', '2026-01-26 17:24:29', '2026-01-28 00:48:03'),
-(2, 1, 3, 2, 1, 2, '2026-01-27', '123456789', '023913738138', '2022463642', 'ahmad bin ali', 'aisyahnadhiraha@gmail.com', 'Code The Pixel', '59 A,JALAN BELAKANG MASJID', 'KAMPUNG SELARONG', '33100', 'PENGKALAN HULU', 'Perak', '2026-10-01', '2026-02-01', 'set 1.pdf', 'webroot\\files\\Applications\\cv\\', 0, '', '', 0, '', '2026-01-27 15:26:55', '2026-01-27 15:26:55'),
-(4, 1, 1, 1, 1, 3, '2026-01-28', '0178990494', '023913738138', '2022463642', 'ahmad bin ali', 'aisyahnadhiraha@gmail.com', 'Code The Pixel', '59 A,JALAN BELAKANG MASJID', 'KAMPUNG SELARONG', '33100', 'PENGKALAN HULU', 'Perak', '2024-10-01', '2025-02-28', 'Surat_Tawaran_AISYAH_NADHIRAH_BINTI_AHAMAD_KHAIRI.pdf', 'webroot\\files\\Applications\\cv\\', 0, '', '', 0, 'UiTM-S3(HEA-CDIM.CDIM262/4', '2026-01-28 01:15:35', '2026-01-28 13:10:22');
+(1, 1, 1, 1, 3, 1, '2026-02-02', '0178990494', '040823140888', '2025180137', 'Aisyah Nadhirah binti Ahamad Khairi', 'aisyahnadhiraha@gmail.com', 'UiTM Cawangan Selangor Kampus Puncak Perdana', 'Jalan Pulau Indah Au10/A', 'Puncak Perdana', '40150', 'Shah Alam', 'Selangor', '2026-03-01', '2026-08-31', 'FACULTY OF INFORMATION SCIENCE.pdf', 'webroot\\files\\Applications\\cv\\', 0, '', '', 1, 'UiTM-S1(HEA-AC.AC110/1', '2026-02-02 01:31:07', '2026-02-02 01:39:35'),
+(2, 1, 2, 3, 6, 1, '2026-02-02', '0136485200', '040718048755', '2022463642', 'Muhammad Affif bin Asmad', 'affif@gmail.com', 'UiTM Cawangan Selangor Kampus Puncak Perdana', 'Jalan Pulau Indah Au10/A', 'Puncak Perdana', '40150', 'Shah Alam', 'Selangor', '2027-10-02', '2028-02-29', '', '', 0, '', '', 2, 'UiTM-S1(HEA-AD.AD111/2', '2026-02-02 01:38:54', '2026-02-02 01:40:46');
 
 -- --------------------------------------------------------
 
@@ -88,8 +87,16 @@ CREATE TABLE `appointments` (
 --
 
 INSERT INTO `appointments` (`id`, `code`, `session`, `status`, `created`, `modified`) VALUES
-(1, '20244', 'Oktober-Februari 2025', 1, '2026-01-26 07:18:05', '2026-01-26 07:18:05'),
-(2, '20252', 'Mac-Ogos 2026', 1, '2026-01-26 07:19:07', '2026-01-28 00:50:24');
+(1, '20251', 'Mac-Ogos 2025', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39'),
+(2, '20252', 'Oktober-Februari 2025/2026', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39'),
+(3, '20261', 'Mac-Ogos 2026', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39'),
+(4, '20262', 'Oktober-Februari 2026/2027', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39'),
+(5, '20271', 'Mac-Ogos 2027', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39'),
+(6, '20272', 'Oktober-Februari 2027/2028', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39'),
+(7, '20281', 'Mac-Ogos 2028', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39'),
+(8, '20282', 'Oktober-Februari 2028/2029', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39'),
+(9, '20291', 'Mac-Ogos 2029', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39'),
+(10, '20292', 'Oktober-Februari 2029/2030', 1, '2026-01-30 23:01:39', '2026-01-30 23:01:39');
 
 -- --------------------------------------------------------
 
@@ -135,7 +142,42 @@ INSERT INTO `audit_logs` (`id`, `transaction`, `type`, `primary_key`, `source`, 
 (16, '7c6b108e-cc0d-4157-a8b0-bc20880c3699', 'create', 3, 'branches', NULL, '[]', '{\"id\":3,\"code\":\"S3\",\"session\":\"UiTM Cawangan Kedah Kampus Merbok\",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Branches\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/branches\\/add\",\"slug\":1}', 1, NULL, '2026-01-28 01:13:09'),
 (17, 'a3f2380d-cac7-4d58-ba39-9f184643687a', 'create', 4, 'branches', NULL, '[]', '{\"id\":4,\"code\":\"S1\",\"session\":\"UiTM Cawangan Selangor Kampus Puncak Alam\",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Branches\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/branches\\/add\",\"slug\":1}', 1, NULL, '2026-01-28 01:13:32'),
 (18, '994574d8-9703-4f4f-a14b-63e6cac6514c', 'create', 4, 'applications', NULL, '[]', '{\"id\":4,\"user_id\":1,\"faculty_id\":1,\"program_id\":1,\"appointment_id\":1,\"branch_id\":3,\"application_date\":\"2026-01-28\",\"phone\":\"0178990494\",\"nric\":\"023913738138\",\"matrix\":\"2022463642\",\"pic_name\":\"ahmad bin ali\",\"pic_email\":\"aisyahnadhiraha@gmail.com\",\"company_name\":\"Code The Pixel\",\"company_street1\":\"59 A,JALAN BELAKANG MASJID\",\"company_street2\":\"KAMPUNG SELARONG\",\"company_postcode\":\"33100\",\"company_city\":\"PENGKALAN HULU\",\"company_state\":\"Perak\",\"start_date\":\"2024-10-01\",\"end_date\":\"2025-02-28\",\"cv\":\"Surat_Tawaran_AISYAH_NADHIRAH_BINTI_AHAMAD_KHAIRI.pdf\",\"cv_dir\":\"webroot\\\\files\\\\Applications\\\\cv\\\\\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-01-28 01:15:35'),
-(19, '52f02822-04cd-427b-a203-bf52fa537c13', 'update', 4, 'applications', NULL, '{\"ref_no\":\"\"}', '{\"ref_no\":\"UiTM-S3(HEA-CDIM.CDIM262\\/4\"}', '[]', 1, NULL, '2026-01-28 01:15:52');
+(19, '52f02822-04cd-427b-a203-bf52fa537c13', 'update', 4, 'applications', NULL, '{\"ref_no\":\"\"}', '{\"ref_no\":\"UiTM-S3(HEA-CDIM.CDIM262\\/4\"}', '[]', 1, NULL, '2026-01-28 01:15:52'),
+(20, 'f83502f8-07d4-4518-bdde-4f62a9c6e62c', 'update', 4, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"UiTM-S3(HEA-CDIM.CDIM262\\/4\"}', '{\"approval_status\":1,\"ref_no\":\"UiTM-S3(HEA-CDIM.CDIM262\\/4\"}', '[]', 1, NULL, '2026-01-30 11:52:32'),
+(21, 'c3627072-f43c-4b9b-9cff-60dbeeb3d065', 'create', 5, 'applications', NULL, '[]', '{\"id\":5,\"user_id\":1,\"faculty_id\":2,\"program_id\":2,\"appointment_id\":1,\"branch_id\":3,\"application_date\":\"2026-01-30\",\"phone\":\"48948948242464i\",\"nric\":\"038904723462\",\"matrix\":\"2232862354\",\"pic_name\":\"hgfrtwrftfrwtrryfuerfhjg\",\"pic_email\":\"jhrjw4rgyuwrfyrfgeyfgefeu@gmail.com\",\"company_name\":\"kejwehruwegywufywferfhjrefbuehrb\",\"company_street1\":\"mfnrjfhergeyvbvgdbcdhnbdhvfdbvf\",\"company_street2\":\"nfbhegyerfgrwyfsdhfjebufvg\",\"company_postcode\":\"3427846756\",\"company_city\":\"dfdfgehfgerhffef\",\"company_state\":\"W.P. Putrajaya\",\"start_date\":\"2026-01-29\",\"end_date\":\"2027-01-16\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-01-30 12:43:15'),
+(22, '8dbcf114-e64a-465d-ac19-155d5c344590', 'update', 5, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":2,\"ref_no\":\"UiTM-S3(HEA-BM.IM110\\/5\"}', '[]', 1, NULL, '2026-01-30 12:45:18'),
+(23, 'd49bfbf9-1df1-4990-bd38-1300cae1a27d', 'create', 6, 'applications', NULL, '[]', '{\"id\":6,\"faculty_id\":1,\"program_id\":1,\"appointment_id\":1,\"branch_id\":3,\"application_date\":\"2026-01-30\",\"phone\":\"089897988888888\",\"nric\":\"038904723462\",\"matrix\":\"2493284327\",\"pic_name\":\"hgfrtwrftfrwtrryfuerfhjg\",\"pic_email\":\"jhrjw4rgyuwrfyrfgeyfgefeu@gmail.com\",\"company_name\":\"UITM\",\"company_street1\":\"MMJH\",\"company_street2\":\"HFTFTF6\",\"company_postcode\":\"0000000000\",\"company_city\":\"BHJVVVVVVVVVVVVVVVVVV\",\"company_state\":\"W.P. Putrajaya\",\"start_date\":\"2026-02-20\",\"end_date\":\"2026-05-06\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-01-30 12:49:37'),
+(24, '576f5ae5-f21e-4865-ac22-e7ff8d3625dd', 'create', 7, 'applications', NULL, '[]', '{\"id\":7,\"faculty_id\":1,\"program_id\":1,\"appointment_id\":1,\"branch_id\":3,\"application_date\":\"2026-01-30\",\"phone\":\"928378923876274\",\"nric\":\"883264276423\",\"matrix\":\"2025180127\",\"pic_name\":\"syi\",\"pic_email\":\"mmm@gmail.com\",\"company_name\":\"nebhgh\",\"company_street1\":\"9i9\",\"company_street2\":\"nfhhf\",\"company_postcode\":\"11000\",\"company_city\":\"ejhuhy\",\"company_state\":\"Sabah\",\"start_date\":\"2026-02-07\",\"end_date\":\"2026-03-26\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-01-30 12:51:40'),
+(25, '4de5d15e-5362-48ef-866b-3eabb749667e', 'delete', 5, 'applications', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/delete\\/5\",\"slug\":1}', 1, NULL, '2026-01-30 12:55:24'),
+(26, 'f3cc0e04-a377-4822-8cce-f898d747c738', 'create', 8, 'applications', NULL, '[]', '{\"id\":8,\"faculty_id\":1,\"program_id\":1,\"appointment_id\":2,\"branch_id\":3,\"application_date\":\"2026-01-30\",\"phone\":\"010088263726373\",\"nric\":\"92839237838\",\"matrix\":\"3363746263\",\"pic_name\":\"jkjhjkhhfghdffhfjd\",\"pic_email\":\"Mwggqdrtqdertqrcwed@gmail.com\",\"company_name\":\"UITM\",\"company_street1\":\"MMJH\",\"company_street2\":\"HFTFTF6\",\"company_postcode\":\"0000000000\",\"company_city\":\"BHJVVVVVVVVVVVVVVVVVV\",\"company_state\":\"Pulau Pinang\",\"start_date\":\"2026-02-07\",\"end_date\":\"2026-02-14\",\"approval_name\":\"\",\"approval_post\":\"\",\"approval_status\":0}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-01-30 12:58:29'),
+(27, '8f46ec24-379e-432f-bae0-42dcaf6f7258', 'create', 9, 'applications', NULL, '[]', '{\"id\":9,\"user_id\":1,\"faculty_id\":2,\"program_id\":1,\"appointment_id\":1,\"branch_id\":3,\"application_date\":\"2026-01-30\",\"phone\":\"2889737814t3654\",\"nric\":\"2939786344\",\"matrix\":\"2025198763\",\"pic_name\":\"hgfrtwrftfrwtrryfuerfhjg\",\"pic_email\":\"jhrjw4rgyuwrfyrfgeyfgefeu@gmail.com\",\"company_name\":\"UITM\",\"company_street1\":\"MMJH\",\"company_street2\":\"HFTFTF6\",\"company_postcode\":\"0000000000\",\"company_city\":\"BHJVVVVVVVVVVVVVVVVVV\",\"company_state\":\"W.P. Labuan\",\"start_date\":\"2026-02-28\",\"end_date\":\"2026-03-07\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-01-30 13:02:23'),
+(28, '0e8e7522-1baf-402d-80bb-83d3d6b1b62b', 'delete', 3, 'faculties', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Faculties\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/faculties\\/delete\\/3\",\"slug\":1}', 1, NULL, '2026-01-30 13:34:25'),
+(29, '016eba62-37a6-47d3-9409-deff8f239a5a', 'delete', 1, 'applications', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/delete\\/1\",\"slug\":1}', 1, NULL, '2026-01-30 21:59:52'),
+(30, '3825ed3c-680b-476f-b012-ff8adfc39609', 'delete', 9, 'applications', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/delete\\/9\",\"slug\":1}', 1, NULL, '2026-01-30 22:00:09'),
+(31, '6c33d546-9f31-4fef-a49f-a57015ad66bf', 'delete', 4, 'applications', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/delete\\/4\",\"slug\":1}', 1, NULL, '2026-01-30 22:00:16'),
+(32, 'a536c4b1-3cf1-464d-a21c-610bc3de949f', 'create', 1, 'applications', NULL, '[]', '{\"id\":1,\"user_id\":1,\"faculty_id\":1,\"program_id\":60,\"appointment_id\":2,\"branch_id\":1,\"application_date\":\"2026-01-30\",\"phone\":\"0135415238\",\"nric\":\"040523110396\",\"matrix\":\"2025118603\",\"pic_name\":\"PUAN AINI AISYAH BINTI ZHARIF ISKANDAR\",\"pic_email\":\"aini@gmail.com\",\"company_name\":\"UiTM Cawangan Kelantan Kampus Machang\",\"company_street1\":\"Kampung Belukar\",\"company_street2\":\"Bandar ,Machang\",\"company_postcode\":\"18500\",\"company_city\":\"Machang\",\"company_state\":\"Kelantan\",\"start_date\":\"2026-03-06\",\"end_date\":\"2026-08-31\",\"cv\":\"Receipt (1).pdf\",\"cv_dir\":\"webroot\\\\files\\\\Applications\\\\cv\\\\\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-01-30 22:36:37'),
+(33, 'da9b8270-3b2f-4fcc-8706-8e535f52a21b', 'update', 1, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":1,\"ref_no\":\"UiTM-S1(HEA-CDIM.CDIM262\\/1\"}', '[]', 1, NULL, '2026-01-30 22:36:48'),
+(34, '55fa0ca7-123d-4978-ad27-f0aa4c1e32d5', 'delete', 1, 'applications', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/applications\\/delete\\/1\",\"slug\":1}', 1, NULL, '2026-01-30 22:45:28'),
+(35, '435cb534-7e63-4700-a439-39e40690b5aa', 'create', 2, 'applications', NULL, '[]', '{\"id\":2,\"user_id\":1,\"faculty_id\":1,\"program_id\":27,\"appointment_id\":2,\"branch_id\":2,\"application_date\":\"2026-01-30\",\"phone\":\"0135415238\",\"nric\":\"030567411567\",\"matrix\":\"2025117864\",\"pic_name\":\"PUAN AINI AISYAH BINTI ZHARIFF ISKANDAR\",\"pic_email\":\"ainiaisyah@gmial.com\",\"company_name\":\"UiTM Cawangan Kelantan Kampus Machang\",\"company_street1\":\"Kampung Belukar\",\"company_street2\":\"Bandar Machang\",\"company_postcode\":\"18500\",\"company_city\":\"Machang\",\"company_state\":\"Kelantan\",\"start_date\":\"2026-03-01\",\"end_date\":\"2026-08-31\",\"cv\":\"Receipt (1).pdf\",\"cv_dir\":\"webroot\\\\files\\\\Applications\\\\cv\\\\\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-01-30 22:51:57'),
+(36, '99804d07-873f-4d5c-99ae-4a84da7950ae', 'update', 2, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":1,\"ref_no\":\"UiTM-S2(HEA-CDIM.CDIM110\\/2\"}', '[]', 1, NULL, '2026-01-30 22:52:11'),
+(37, '7b41aa59-3811-4832-a913-5be8a27f1777', 'delete', 2, 'applications', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/delete\\/2\",\"slug\":1}', 1, NULL, '2026-01-30 23:02:18'),
+(38, '63a45bc8-e7ef-483a-8105-84e02cbeba3b', 'create', 76, 'programs', NULL, '[]', '{\"id\":76,\"faculty_id\":1,\"code\":\"ACC110\",\"name\":\"Diploma in Accountancy\",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/add\",\"slug\":1}', 1, NULL, '2026-01-31 00:54:47'),
+(39, '6a8946a2-0d66-4b45-83ae-ce648d110c96', 'create', 77, 'programs', NULL, '[]', '{\"id\":77,\"faculty_id\":1,\"code\":\"AC110\",\"name\":\"Diploma in Accountancy\",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/add\",\"slug\":1}', 1, NULL, '2026-01-31 00:57:14'),
+(40, '924fc2bb-64c7-49a6-9aab-6d4988558323', 'delete', 77, 'programs', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/delete\\/77\",\"slug\":1}', 1, NULL, '2026-01-31 00:57:27'),
+(41, '0299c4dd-f15f-413a-9a48-beac283f37bd', 'create', 1, 'programs', NULL, '[]', '{\"id\":1,\"faculty_id\":1,\"code\":\"ACC110\",\"name\":\"Diploma Perakaunan\",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/add\",\"slug\":1}', 1, NULL, '2026-01-31 00:59:33'),
+(42, '0def3177-3d2a-4d37-bf80-bf1dad9a395a', 'create', 2, 'programs', NULL, '[]', '{\"id\":2,\"faculty_id\":1,\"code\":\"AC120\",\"name\":\"Diploma Sistem Maklumat Perakaunan\",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/add\",\"slug\":1}', 1, NULL, '2026-01-31 01:00:28'),
+(43, '2bd802aa-4466-453b-af2a-9904734d4686', 'create', 3, 'programs', NULL, '[]', '{\"id\":3,\"faculty_id\":1,\"code\":\"AC240\",\"name\":\"Sarjana Muda Perakaunan (Kepujian)\",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/add\",\"slug\":1}', 1, NULL, '2026-01-31 01:01:13'),
+(44, 'e6bc8e6a-e13e-4149-8301-1b6d61123259', 'create', 4, 'programs', NULL, '[]', '{\"id\":4,\"faculty_id\":2,\"code\":\"AD111\",\"name\":\"Diploma Seni Reka Grafik & Media Digital \",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/add\",\"slug\":1}', 1, NULL, '2026-01-31 01:03:21'),
+(45, '5254cc81-ef52-4765-82a3-a4025269fe31', 'delete', 2, 'programs', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/delete\\/2\",\"slug\":1}', 1, NULL, '2026-01-31 01:08:44'),
+(46, 'eb2033d0-0fff-41c0-b0f0-b6a919164b6d', 'delete', 3, 'programs', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/delete\\/3\",\"slug\":1}', 1, NULL, '2026-01-31 01:08:48'),
+(47, 'af10c444-2fb4-4937-abd2-aec4c039c857', 'delete', 4, 'programs', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Programs\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/programs\\/delete\\/4\",\"slug\":1}', 1, NULL, '2026-01-31 01:08:50'),
+(48, '08ca5549-68d7-438c-a4e4-16851b49eea3', 'create', 3, 'applications', NULL, '[]', '{\"id\":3,\"user_id\":1,\"faculty_id\":1,\"program_id\":1,\"appointment_id\":2,\"branch_id\":1,\"application_date\":\"2026-01-31\",\"phone\":\"0178890494\",\"nric\":\"040823140888\",\"matrix\":\"2025180137\",\"pic_name\":\"AISYAH NADHIRAH BINTI AHAMAD KHAIRI \",\"pic_email\":\"aisyahnadhiraha@gmail.com\",\"company_name\":\"Cawangan Selangor Kampus Puncak Perdana\",\"company_street1\":\"Lot 6, Jalan Pulau Angsa U10\\/14\",\"company_street2\":\" Seksyen U10\",\"company_postcode\":\"40150\",\"company_city\":\"Shah Alam\",\"company_state\":\"Selangor\",\"start_date\":\"2025-10-03\",\"end_date\":\"2026-02-28\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-01-31 02:01:06'),
+(49, '50d69981-466c-41fb-976d-441798f44ce9', 'update', 3, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":1,\"ref_no\":\"UiTM-S1(HEA-AC.AC110\\/3\"}', '[]', 1, NULL, '2026-01-31 02:02:04'),
+(50, '03f44717-7381-4c2c-9ab7-3e90905350a4', 'create', 1, 'applications', NULL, '[]', '{\"id\":1,\"user_id\":1,\"faculty_id\":1,\"program_id\":1,\"appointment_id\":3,\"branch_id\":1,\"application_date\":\"2026-02-02\",\"phone\":\"0178990494\",\"nric\":\"040823140888\",\"matrix\":\"2025180137\",\"pic_name\":\"Aisyah Nadhirah binti Ahamad Khairi\",\"pic_email\":\"aisyahnadhiraha@gmail.com\",\"company_name\":\"UiTM Cawangan Selangor Kampus Puncak Perdana\",\"company_street1\":\"Jalan Pulau Indah Au10\\/A\",\"company_street2\":\"Puncak Perdana\",\"company_postcode\":\"40150\",\"company_city\":\"Shah Alam\",\"company_state\":\"Selangor\",\"start_date\":\"2026-03-01\",\"end_date\":\"2026-08-31\",\"cv\":\"FACULTY OF INFORMATION SCIENCE.pdf\",\"cv_dir\":\"webroot\\\\files\\\\Applications\\\\cv\\\\\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-02-02 01:31:10'),
+(51, 'd2cbe0cb-e1f4-4bbd-94a0-2a6c2e9ac38c', 'create', 25, 'branches', NULL, '[]', '{\"id\":25,\"code\":\"S3\",\"session\":\"UiTM Cawangan Selangor Kampus Puncak Alam\",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Branches\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/branches\\/add\",\"slug\":1}', 1, NULL, '2026-02-02 01:34:39'),
+(52, '687acdb3-d61a-453b-bd74-fc7d53c41fc4', 'create', 2, 'applications', NULL, '[]', '{\"id\":2,\"user_id\":1,\"faculty_id\":2,\"program_id\":3,\"appointment_id\":6,\"branch_id\":1,\"application_date\":\"2026-02-02\",\"phone\":\"0136485200\",\"nric\":\"040718048755\",\"matrix\":\"2022463642\",\"pic_name\":\"Muhammad Affif bin Asmad\",\"pic_email\":\"affif@gmail.com\",\"company_name\":\"UiTM Cawangan Selangor Kampus Puncak Perdana\",\"company_street1\":\"Jalan Pulau Indah Au10\\/A\",\"company_street2\":\"Puncak Perdana\",\"company_postcode\":\"40150\",\"company_city\":\"Shah Alam\",\"company_state\":\"Selangor\",\"start_date\":\"2027-10-02\",\"end_date\":\"2028-02-29\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-02-02 01:38:54'),
+(53, '99f84dd5-4bc9-4cb1-98bd-b0967bbb400e', 'update', 1, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":1,\"ref_no\":\"UiTM-S1(HEA-AC.AC110\\/1\"}', '[]', 1, NULL, '2026-02-02 01:39:35'),
+(54, '9d7b840e-a539-4fe9-a3d0-f8ba948af5c4', 'update', 2, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":2,\"ref_no\":\"UiTM-S1(HEA-AD.AD111\\/2\"}', '[]', 1, NULL, '2026-02-02 01:40:46');
 
 -- --------------------------------------------------------
 
@@ -157,8 +199,31 @@ CREATE TABLE `branches` (
 --
 
 INSERT INTO `branches` (`id`, `code`, `session`, `status`, `created`, `modified`) VALUES
-(3, 'S3', 'UiTM Cawangan Kedah Kampus Merbok', 1, '2026-01-28 01:13:09', '2026-01-28 01:13:09'),
-(4, 'S1', 'UiTM Cawangan Selangor Kampus Puncak Alam', 1, '2026-01-28 01:13:32', '2026-01-28 01:13:32');
+(1, 'S1', 'UiTM Cawangan Selangor Kampus Puncak Perdana', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(2, 'S2', 'UiTM Cawangan Selangor Kampus Shah Alam', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(3, 'K1', 'UiTM Cawangan Kelantan Kampus Machang', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(4, 'K2', 'UiTM Cawangan Kelantan Kampus Kota Bharu', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(5, 'M1', 'UiTM Cawangan Melaka Kampus Alor Gajah', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(6, 'M2', 'UiTM Cawangan Melaka Kampus Bandaraya Melaka', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(7, 'N1', 'UiTM Cawangan Negeri Sembilan Kampus Seremban', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(8, 'N2', 'UiTM Cawangan Negeri Sembilan Kampus Kuala Pilah', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(9, 'N3', 'UiTM Cawangan Negeri Sembilan Kampus Rembau', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(10, 'P1', 'UiTM Cawangan Perak Kampus Seri Iskandar', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(11, 'P2', 'UiTM Cawangan Perak Kampus Tapah', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(12, 'PP1', 'UiTM Cawangan Pulau Pinang Kampus Permatang Pauh', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(13, 'PP2', 'UiTM Cawangan Pulau Pinang Kampus Bertam', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(14, 'PL1', 'UiTM Cawangan Perlis Kampus Arau', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(15, 'PH1', 'UiTM Cawangan Pahang Kampus Jengka', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(16, 'PH2', 'UiTM Cawangan Pahang Kampus Raub', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(17, 'J1', 'UiTM Cawangan Johor Kampus Segamat', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(18, 'J2', 'UiTM Cawangan Johor Kampus Pasir Gudang', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(19, 'SB1', 'UiTM Cawangan Sabah Kampus Kota Kinabalu', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(20, 'SB2', 'UiTM Cawangan Sabah Kampus Tawau', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(21, 'SW1', 'UiTM Cawangan Sarawak Kampus Samarahan', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(22, 'SW2', 'UiTM Cawangan Sarawak Kampus Mukah', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(23, 'T1', 'UiTM Cawangan Terengganu Kampus Kuala Terengganu', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(24, 'T2', 'UiTM Cawangan Terengganu Kampus Dungun', 1, '2026-01-30 20:12:17', '2026-01-30 20:12:17'),
+(25, 'S3', 'UiTM Cawangan Selangor Kampus Puncak Alam', 1, '2026-02-02 01:34:38', '2026-02-02 01:34:38');
 
 -- --------------------------------------------------------
 
@@ -205,9 +270,19 @@ CREATE TABLE `faculties` (
 --
 
 INSERT INTO `faculties` (`id`, `code`, `name`, `status`, `created`, `modified`) VALUES
-(1, 'CDIM', 'Kolej Pengkomputeran Informatik dan Matematik', 1, '2026-01-26 07:15:25', '2026-01-26 07:15:25'),
-(2, 'BM', 'Fakulti Pengurusan dan Perniagaan ', 1, '2026-01-26 07:15:54', '2026-01-26 07:15:54'),
-(3, 'AC', 'Fakulti Perakaunan', 1, '2026-01-26 07:16:18', '2026-01-26 07:16:18');
+(1, 'AC', 'Fakulti Perakaunan', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(2, 'AD', 'Fakulti Seni Lukis & Seni Reka', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(3, 'FSPPP', 'Fakulti Sains Pentadbiran & Pengajian Polisi', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(4, 'FSPU', 'Fakulti Senibina, Perancangan & Ukur', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(5, 'FSG', 'Fakulti Sains Gunaan', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(6, 'FBM', 'Fakulti Pengurusan Perniagaan', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(7, 'FINFO', 'Fakulti Pengurusan Maklumat', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(8, 'FSKM', 'Fakulti Sains Komputer & Matematik', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(9, 'FKA', 'Fakulti Kejuruteraan Awam', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(10, 'FKE', 'Fakulti Kejuruteraan Elektrik', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(11, 'FKM', 'Fakulti Kejuruteraan Mekanikal', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(12, 'FSK', 'Fakulti Sains Kesihatan', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42'),
+(13, 'FSR', 'Fakulti Sains Sukan & Rekreasi', 1, '2026-01-31 00:34:42', '2026-01-31 00:34:42');
 
 -- --------------------------------------------------------
 
@@ -327,8 +402,83 @@ CREATE TABLE `programs` (
 --
 
 INSERT INTO `programs` (`id`, `faculty_id`, `code`, `name`, `status`, `created`, `modified`) VALUES
-(1, 1, 'CDIM262', 'Bachelor Degree of Science in Information Management', 1, '2026-01-26 07:16:44', '2026-01-26 07:16:44'),
-(2, 1, 'IM110', 'Diploma in Information Management', 1, '2026-01-26 07:17:28', '2026-01-26 07:17:28');
+(1, 1, 'AC110', 'Diploma in Accountancy', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(2, 1, 'AC120', 'Diploma in Accounting Information Systems', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(3, 2, 'AD111', 'Diploma in Fine Art and Design (Graphic Design & Digital Media)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(4, 2, 'AD112', 'Diploma in Fine Art and Design (Textile Design)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(5, 2, 'AD113', 'Diploma in Fine Art and Design (Fine Metal Design)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(6, 2, 'AD117', 'Diploma in Photography and Creative Imaging', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(7, 2, 'AD118', 'Diploma in Fine Art', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(8, 2, 'AD120', 'Diploma in Printing Technology', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(9, 2, 'AD126', 'Diploma in Fashion Design Technology', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(10, 2, 'AD127', 'Diploma in Animation', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(11, 3, 'AM110', 'Diploma in Public Administration', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(12, 4, 'AP111', 'Diploma in Town and Regional Planning', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(13, 4, 'AP112', 'Diploma in Quantity Surveying', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(14, 4, 'AP113', 'Diploma in Building Technology', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(15, 4, 'AP114', 'Diploma in Building Surveying', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(16, 4, 'AP115', 'Diploma in Landscape Architecture', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(17, 4, 'AP116', 'Diploma in Real Estate Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(18, 5, 'AS111', 'Diploma in Applied Sciences', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(19, 5, 'AS112', 'Diploma in Food Technology', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(20, 5, 'AS114', 'Diploma in Environmental Health', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(21, 6, 'BA111', 'Diploma in Business Studies', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(22, 6, 'BA118', 'Diploma in Office Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(23, 6, 'BA119', 'Diploma in Banking', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(24, 6, 'BA120', 'Diploma in Insurance', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(25, 6, 'BA121', 'Diploma in Investment Analysis', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(26, 6, 'BM111', 'Diploma in Muamalat', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(27, 7, 'CDIM110', 'Diploma in Information Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(28, 8, 'CS110', 'Diploma in Computer Science', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(29, 8, 'CS111', 'Diploma in Information Technology', 0, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(30, 8, 'CS113', 'Diploma in Statistics', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(31, 8, 'CS114', 'Diploma in Mathematical Sciences', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(32, 9, 'EC110', 'Diploma in Civil Engineering', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(33, 10, 'EE110', 'Diploma in Electrical Engineering', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(34, 10, 'EE111', 'Diploma in Electronic Engineering', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(35, 11, 'EM110', 'Diploma in Mechanical Engineering', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(36, 11, 'EM111', 'Diploma in Industrial Engineering', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(37, 6, 'HM111', 'Diploma in Halal Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(38, 12, 'HS110', 'Diploma in Nursing', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(39, 13, 'SR113', 'Diploma in Sports Studies', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(40, 1, 'AC240', 'Bachelor of Accountancy (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(41, 2, 'AD233', 'Bachelor of Creative Game Design (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(42, 2, 'AD234', 'Bachelor of Creative Motion Graphics (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(43, 2, 'AD248', 'Bachelor of Fine Art (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(44, 2, 'AD261', 'Bachelor of Graphic Design (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(45, 2, 'AD266', 'Bachelor of Fashion Design Technology (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(46, 2, 'AD267', 'Bachelor of Creative Photomedia (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(47, 6, 'BA242', 'Bachelor of Business Administration (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(48, 6, 'BA249', 'Bachelor of Banking (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(49, 6, 'BA250', 'Bachelor of Insurance (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(50, 6, 'BA252', 'Bachelor of Investment Management (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(51, 4, 'BE221', 'Bachelor of Town and Regional Planning (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(52, 4, 'BE243', 'Bachelor of Science (Hons) in Architecture', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(53, 4, 'BE246', 'Bachelor of Construction Management (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(54, 4, 'BE247', 'Bachelor of Interior Architecture (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(55, 4, 'BE248', 'Bachelor of Landscape Architecture (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(56, 4, 'BE249', 'Bachelor of Building Surveying (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(57, 4, 'BE254', 'Bachelor of Quantity Surveying (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(58, 4, 'BE255', 'Bachelor of Estate Management (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(59, 7, 'CDIM110', 'Diploma in Information Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(60, 7, 'CDIM120', 'Diploma in Library Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(61, 7, 'CDIM260', 'Bachelor of Information Science (Hons) Library Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(62, 7, 'CDIM261', 'Bachelor of Information Science (Hons) Records Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(63, 7, 'CDIM262', 'Bachelor of Information Science (Hons) Information Systems Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(64, 7, 'CDIM263', 'Bachelor of Information Science (Hons) Information Content Management', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(65, 8, 'CS230', 'Bachelor of Computer Science (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(66, 8, 'CS240', 'Bachelor of Information Technology (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(67, 8, 'CS245', 'Bachelor of Information Systems (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(68, 8, 'CS246', 'Bachelor of Data Science (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(69, 8, 'CS247', 'Bachelor of Mathematical Modelling and Analytics (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(70, 9, 'EC220', 'Bachelor of Civil Engineering (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(71, 10, 'EE220', 'Bachelor of Electrical Engineering (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(72, 11, 'EE221', 'Bachelor of Electronic Engineering (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(73, 11, 'EM220', 'Bachelor of Mechanical Engineering (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(74, 13, 'SR241', 'Bachelor of Sports Science (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(75, 13, 'SR243', 'Bachelor of Sports Management (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(76, 13, 'SR245', 'Bachelor of Coaching Science (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44'),
+(77, 13, 'SR246', 'Bachelor of Recreation Management (Hons)', 1, '2026-01-31 01:14:44', '2026-01-31 01:14:44');
 
 -- --------------------------------------------------------
 
@@ -441,7 +591,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `user_group_id`, `fullname`, `password`, `email`, `avatar`, `avatar_dir`, `token`, `token_created_at`, `status`, `is_email_verified`, `last_login`, `ip_address`, `slug`, `created`, `modified`, `created_by`, `modified_by`) VALUES
-(1, 1, 'NURUL HANIM SYUHADA BINTI HAZMIRUDDIN SHAM', '$2y$10$OrUKHzNQUic6dFqSuG9QBeDzMbbwPz1BQXKgBKPcQyMTNdv3Z22xe', 'admin@localhost.com', 'Screenshot 2026-01-28 010829.png', 'webroot\\files\\Users\\avatar\\Administrator', NULL, '2024-07-10 20:30:04', '1', 1, '2026-01-27 15:15:53', '::1', 'Administrator', '2022-10-26 02:54:19', '2026-01-28 01:10:38', NULL, NULL);
+(1, 1, 'NURUL HANIM SYUHADA BINTI HAZMIRUDDIN SHAM', '$2y$10$OrUKHzNQUic6dFqSuG9QBeDzMbbwPz1BQXKgBKPcQyMTNdv3Z22xe', 'admin@localhost.com', 'Screenshot 2026-01-28 010829.png', 'webroot\\files\\Users\\avatar\\Administrator', NULL, '2024-07-10 20:30:04', '1', 1, '2026-02-02 01:25:19', '::1', 'Administrator', '2022-10-26 02:54:19', '2026-01-28 01:10:38', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -492,7 +642,10 @@ CREATE TABLE `user_logs` (
 
 INSERT INTO `user_logs` (`id`, `user_id`, `action`, `useragent`, `os`, `ip`, `host`, `referrer`, `status`, `created`, `modified`) VALUES
 (1, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-01-26 15:30:48', '2026-01-26 15:30:48'),
-(2, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-01-27 15:15:53', '2026-01-27 15:15:53');
+(2, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-01-27 15:15:53', '2026-01-27 15:15:53'),
+(3, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 01:23:47', '2026-02-02 01:23:47'),
+(4, 1, 'Logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', 'http://localhost/ppoappointment/dashboards/', 1, '2026-02-02 01:24:49', '2026-02-02 01:24:49'),
+(5, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 01:25:19', '2026-02-02 01:25:19');
 
 --
 -- Indexes for dumped tables
@@ -604,25 +757,25 @@ ALTER TABLE `user_logs`
 -- AUTO_INCREMENT for table `applications`
 --
 ALTER TABLE `applications`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `appointments`
 --
 ALTER TABLE `appointments`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `audit_logs`
 --
 ALTER TABLE `audit_logs`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `branches`
 --
 ALTER TABLE `branches`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -646,7 +799,7 @@ ALTER TABLE `menus`
 -- AUTO_INCREMENT for table `programs`
 --
 ALTER TABLE `programs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -664,7 +817,7 @@ ALTER TABLE `user_groups`
 -- AUTO_INCREMENT for table `user_logs`
 --
 ALTER TABLE `user_logs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
