@@ -111,7 +111,7 @@
 
                 'empty' => 'Select State',
                 'class '=>'form-select',
-            'label' => 'Company State']); ?></div>
+            'label' => 'Branch State']); ?></div>
       </div>
 
 
