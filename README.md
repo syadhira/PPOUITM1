@@ -43,9 +43,7 @@ This system is designed to support UiTM’s PPO placement lifecycle, allowing ad
 - ✅ To Do task manager  
 - ✅ Site configuration  
 - ✅ Notification bar & promotion ribbon  
-- 🌓 Light/dark mode toggle *(coming soon)*  
-- 🧩 ReCrudZero & Menu Management *(coming soon)*  
-- 📦 Archived module *(coming soon)*  
+- 🌓 Light/dark mode toggle  
 
 ---
 
