@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 01, 2026 at 05:50 PM
+-- Generation Time: Feb 02, 2026 at 02:52 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -65,7 +65,10 @@ CREATE TABLE `applications` (
 
 INSERT INTO `applications` (`id`, `user_id`, `faculty_id`, `program_id`, `appointment_id`, `branch_id`, `application_date`, `phone`, `nric`, `matrix`, `pic_name`, `pic_email`, `company_name`, `company_street1`, `company_street2`, `company_postcode`, `company_city`, `company_state`, `start_date`, `end_date`, `cv`, `cv_dir`, `status`, `approval_name`, `approval_post`, `approval_status`, `ref_no`, `created`, `modified`) VALUES
 (1, 1, 1, 1, 3, 1, '2026-02-02', '0178990494', '040823140888', '2025180137', 'Aisyah Nadhirah binti Ahamad Khairi', 'aisyahnadhiraha@gmail.com', 'UiTM Cawangan Selangor Kampus Puncak Perdana', 'Jalan Pulau Indah Au10/A', 'Puncak Perdana', '40150', 'Shah Alam', 'Selangor', '2026-03-01', '2026-08-31', 'FACULTY OF INFORMATION SCIENCE.pdf', 'webroot\\files\\Applications\\cv\\', 0, '', '', 1, 'UiTM-S1(HEA-AC.AC110/1', '2026-02-02 01:31:07', '2026-02-02 01:39:35'),
-(2, 1, 2, 3, 6, 1, '2026-02-02', '0136485200', '040718048755', '2022463642', 'Muhammad Affif bin Asmad', 'affif@gmail.com', 'UiTM Cawangan Selangor Kampus Puncak Perdana', 'Jalan Pulau Indah Au10/A', 'Puncak Perdana', '40150', 'Shah Alam', 'Selangor', '2027-10-02', '2028-02-29', '', '', 0, '', '', 2, 'UiTM-S1(HEA-AD.AD111/2', '2026-02-02 01:38:54', '2026-02-02 01:40:46');
+(2, 1, 2, 3, 6, 1, '2026-02-02', '0136485200', '040718048755', '2022463642', 'Muhammad Affif bin Asmad', 'affif@gmail.com', 'UiTM Cawangan Selangor Kampus Puncak Perdana', 'Jalan Pulau Indah Au10/A', 'Puncak Perdana', '40150', 'Shah Alam', 'Selangor', '2027-10-02', '2028-02-29', '', '', 0, '', '', 1, 'UiTM-S1(HEA-AD.AD111/2', '2026-02-02 01:38:54', '2026-02-02 04:32:38'),
+(3, 1, 3, 11, 3, 1, '2026-02-02', '0179990989', '080923130899', '2025160789', 'ALIA BINTI AHMAD', 'alia@gmail.com', 'UiTM Cawangan Selangor Kampus Puncak Perdana', 'Jalan Pulau Indah Au10/A', 'Puncak Perdana', '40150', 'Shah Alam', 'Selangor', '2026-03-03', '2026-08-31', 'Note IMS566-Asyraf.pdf', 'webroot\\files\\Applications\\cv\\', 0, '', '', 1, 'UiTM-S1(HEA-FSPPP.AM110/3', '2026-02-02 04:12:50', '2026-02-02 04:13:58'),
+(5, 1, 13, 74, 5, 2, '2026-02-02', '01356672653', '080223041688', '2025180177', 'Ali bin Ahmad', 'alia@gmail.com', 'UiTM Cawangan Selangor Kampus Shah Alam', 'Jalan Ilmu 1/1', 'Shah Alam', '40450 ', 'Shah Alam', 'Selangor', '2027-03-02', '2027-08-31', '', '', 0, '', '', 2, 'UiTM-S2(HEA-FSR.SR241/5', '2026-02-02 04:40:27', '2026-02-02 04:41:30'),
+(6, 2, 8, 31, 4, 2, '2026-02-02', '0135643790', '011115010088', '2024156712', 'AINUL BINTI ZANIA', 'ainul@gmail.com', 'UiTM Cawangan Selangor Kampus Shah Alam', 'Jalan Ilmu 1/1', 'Shah Alam', '40450 ', 'Shah Alam', 'Selangor', '2026-10-02', '2027-02-02', '', '', 0, '', '', 0, '', '2026-02-02 21:25:42', '2026-02-02 21:25:58');
 
 -- --------------------------------------------------------
 
@@ -177,7 +180,28 @@ INSERT INTO `audit_logs` (`id`, `transaction`, `type`, `primary_key`, `source`, 
 (51, 'd2cbe0cb-e1f4-4bbd-94a0-2a6c2e9ac38c', 'create', 25, 'branches', NULL, '[]', '{\"id\":25,\"code\":\"S3\",\"session\":\"UiTM Cawangan Selangor Kampus Puncak Alam\",\"status\":1}', '{\"a_name\":\"Add\",\"c_name\":\"Branches\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/branches\\/add\",\"slug\":1}', 1, NULL, '2026-02-02 01:34:39'),
 (52, '687acdb3-d61a-453b-bd74-fc7d53c41fc4', 'create', 2, 'applications', NULL, '[]', '{\"id\":2,\"user_id\":1,\"faculty_id\":2,\"program_id\":3,\"appointment_id\":6,\"branch_id\":1,\"application_date\":\"2026-02-02\",\"phone\":\"0136485200\",\"nric\":\"040718048755\",\"matrix\":\"2022463642\",\"pic_name\":\"Muhammad Affif bin Asmad\",\"pic_email\":\"affif@gmail.com\",\"company_name\":\"UiTM Cawangan Selangor Kampus Puncak Perdana\",\"company_street1\":\"Jalan Pulau Indah Au10\\/A\",\"company_street2\":\"Puncak Perdana\",\"company_postcode\":\"40150\",\"company_city\":\"Shah Alam\",\"company_state\":\"Selangor\",\"start_date\":\"2027-10-02\",\"end_date\":\"2028-02-29\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-02-02 01:38:54'),
 (53, '99f84dd5-4bc9-4cb1-98bd-b0967bbb400e', 'update', 1, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":1,\"ref_no\":\"UiTM-S1(HEA-AC.AC110\\/1\"}', '[]', 1, NULL, '2026-02-02 01:39:35'),
-(54, '9d7b840e-a539-4fe9-a3d0-f8ba948af5c4', 'update', 2, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":2,\"ref_no\":\"UiTM-S1(HEA-AD.AD111\\/2\"}', '[]', 1, NULL, '2026-02-02 01:40:46');
+(54, '9d7b840e-a539-4fe9-a3d0-f8ba948af5c4', 'update', 2, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":2,\"ref_no\":\"UiTM-S1(HEA-AD.AD111\\/2\"}', '[]', 1, NULL, '2026-02-02 01:40:46'),
+(55, 'eb83ab6f-f014-4c12-b4e1-bbbb9562be1a', 'create', 3, 'applications', NULL, '[]', '{\"id\":3,\"user_id\":1,\"faculty_id\":3,\"program_id\":11,\"appointment_id\":3,\"branch_id\":1,\"application_date\":\"2026-02-02\",\"phone\":\"0179990989\",\"nric\":\"080923130899\",\"matrix\":\"2025160789\",\"pic_name\":\"ALIA BINTI AHMAD\",\"pic_email\":\"alia@gmail.com\",\"company_name\":\"UiTM Cawangan Selangor Kampus Puncak Perdana\",\"company_street1\":\"Jalan Pulau Indah Au10\\/A\",\"company_street2\":\"Puncak Perdana\",\"company_postcode\":\"40150\",\"company_city\":\"Shah Alam\",\"company_state\":\"Selangor\",\"start_date\":\"2026-03-03\",\"end_date\":\"2026-08-31\",\"cv\":\"Note IMS566-Asyraf.pdf\",\"cv_dir\":\"webroot\\\\files\\\\Applications\\\\cv\\\\\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-02-02 04:12:53'),
+(56, '65c40b7b-5a9b-4108-ba2c-bf17f25fd953', 'create', 4, 'applications', NULL, '[]', '{\"id\":4,\"user_id\":1,\"faculty_id\":3,\"program_id\":11,\"appointment_id\":3,\"branch_id\":1,\"application_date\":\"2026-02-02\",\"phone\":\"0179990989\",\"nric\":\"080923130899\",\"matrix\":\"2025160789\",\"pic_name\":\"ALIA BINTI AHMAD\",\"pic_email\":\"alia@gmail.com\",\"company_name\":\"UiTM Cawangan Selangor Kampus Puncak Perdana\",\"company_street1\":\"Jalan Pulau Indah Au10\\/A\",\"company_street2\":\"Puncak Perdana\",\"company_postcode\":\"40150\",\"company_city\":\"Shah Alam\",\"company_state\":\"Selangor\",\"start_date\":\"2026-03-03\",\"end_date\":\"2026-08-31\",\"cv\":\"Note IMS566-Asyraf.pdf\",\"cv_dir\":\"webroot\\\\files\\\\Applications\\\\cv\\\\\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-02-02 04:12:53'),
+(57, '96e2da93-9fd2-4ac1-bc2d-d72731036f0b', 'delete', 4, 'applications', NULL, NULL, NULL, '{\"a_name\":\"Delete\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/delete\\/4\",\"slug\":1}', 1, NULL, '2026-02-02 04:13:25'),
+(58, 'a4e3b2d4-0fd6-4b14-b7be-6b39dc8a7aef', 'update', 3, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":1,\"ref_no\":\"UiTM-S1(HEA-FSPPP.AM110\\/3\"}', '[]', 1, NULL, '2026-02-02 04:13:58'),
+(59, 'a849dc57-6275-42c8-ad21-5d53f4a508e8', 'update', 2, 'applications', NULL, '{\"approval_status\":2}', '{\"approval_status\":1}', '{\"a_name\":\"Edit\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/edit\\/2\",\"slug\":1}', 1, NULL, '2026-02-02 04:32:38'),
+(60, '288eb59f-7939-4922-b27e-981f82b4b731', 'create', 5, 'applications', NULL, '[]', '{\"id\":5,\"user_id\":1,\"faculty_id\":13,\"program_id\":74,\"appointment_id\":5,\"branch_id\":2,\"application_date\":\"2026-02-02\",\"phone\":\"01356672653\",\"nric\":\"080223041688\",\"matrix\":\"2025180177\",\"pic_name\":\"Ali bin Ahmad\",\"pic_email\":\"alia@gmail.com\",\"company_name\":\"UiTM Cawangan Selangor Kampus Shah Alam\",\"company_street1\":\"Jalan Ilmu 1\\/1\",\"company_street2\":\"Shah Alam\",\"company_postcode\":\"40450 \",\"company_city\":\"Shah Alam\",\"company_state\":\"Selangor\",\"start_date\":\"2027-03-02\",\"end_date\":\"2027-08-31\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/admin\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-02-02 04:40:27'),
+(61, '1dc2a16f-f507-4967-9c20-13af16ea370e', 'update', 5, 'applications', NULL, '{\"approval_status\":0,\"ref_no\":\"\"}', '{\"approval_status\":2,\"ref_no\":\"UiTM-S2(HEA-FSR.SR241\\/5\"}', '[]', 1, NULL, '2026-02-02 04:41:30'),
+(62, 'c77c8641-d387-45d8-9c86-d59a1c34a532', 'create', 2, 'users', NULL, '[]', '{\"id\":2,\"fullname\":\"AISYAH NADHIRAH BINTI AHAMAD KHAIRI\",\"password\":\"$2y$10$kPuSBnw2zTu0au5SqVj3\\/O\\/uv8BvVGir3CRM1ihsGvBZ0HlJouSNa\",\"email\":\"aisyah@gmail.com\",\"slug\":\"AISYAH-NADHIRAH-BINTI-AHAMAD-KHAIRI\"}', '[]', 1, NULL, '2026-02-02 21:11:50'),
+(63, 'a3411a06-13d7-418f-8488-2a57e1a3968d', 'update', 2, 'users', NULL, '{\"status\":\"0\"}', '{\"status\":1}', '[]', 1, NULL, '2026-02-02 21:12:10'),
+(64, '05722849-b401-4ceb-80c0-e7b92f05cfec', 'update', 2, 'users', NULL, '{\"is_email_verified\":0}', '{\"is_email_verified\":1}', '[]', 1, NULL, '2026-02-02 21:12:18'),
+(65, '43744b70-5458-41ec-b3e2-8e651266eab7', 'create', 6, 'applications', NULL, '[]', '{\"id\":6,\"user_id\":1,\"faculty_id\":8,\"program_id\":31,\"appointment_id\":4,\"branch_id\":2,\"application_date\":\"2026-02-02\",\"phone\":\"0135643790\",\"nric\":\"011115010088\",\"matrix\":\"2024156712\",\"pic_name\":\"AINUL BINTI ZANIA\",\"pic_email\":\"ainul@gmail.com\",\"company_name\":\"UiTM Cawangan Selangor Kampus Shah Alam\",\"company_street1\":\"Jalan Ilmu 1\\/1\",\"company_street2\":\"Shah Alam\",\"company_postcode\":\"40450 \",\"company_city\":\"Shah Alam\",\"company_state\":\"Selangor\",\"start_date\":\"2026-10-02\",\"end_date\":\"2027-02-02\"}', '{\"a_name\":\"Add\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/applications\\/add\",\"slug\":1}', 1, NULL, '2026-02-02 21:25:42'),
+(66, '22146c45-eb1d-4ac6-998f-e9d264e271a6', 'update', 6, 'applications', NULL, '{\"user_id\":1}', '{\"user_id\":2}', '{\"a_name\":\"Edit\",\"c_name\":\"Applications\",\"ip\":\"::1\",\"url\":\"http:\\/\\/localhost\\/ppoappointment\\/applications\\/edit\\/6\",\"slug\":1}', 1, NULL, '2026-02-02 21:25:58'),
+(67, '1b9e993b-e2dc-4aba-9b4c-73d7f384d602', 'create', 3, 'users', NULL, '[]', '{\"id\":3,\"fullname\":\"MUHAMMAD ZHARIF HANAFI BIN ZULKIFLI\",\"password\":\"$2y$10$2qfomMFbW3YOICWsKLT1jOkpVL01HffxC5vC8CGkIMxS7le8kh8C2\",\"email\":\"zharif@gmail.com\",\"slug\":\"MUHAMMAD-ZHARIF-HANAFI-BIN-ZULKIFLI\"}', '[]', 1, NULL, '2026-02-02 21:27:37'),
+(68, '5362e46c-b718-4124-b2e9-af49c44d37f5', 'update', 3, 'users', NULL, '{\"status\":\"0\"}', '{\"status\":1}', '[]', 1, NULL, '2026-02-02 21:28:25'),
+(69, '910d809a-e5df-48a5-a676-8952550ba6fd', 'update', 3, 'users', NULL, '{\"is_email_verified\":0}', '{\"is_email_verified\":1}', '[]', 1, NULL, '2026-02-02 21:28:29'),
+(70, '32274aaf-de9e-45b3-b715-d9b80cc07d34', 'create', 4, 'users', NULL, '[]', '{\"id\":4,\"fullname\":\"ISKANDAR ZULKARNAIN BIN AZMIR\",\"password\":\"$2y$10$TTh8fXwhQkDsbOs5e8aMluQ8ALpX5TpE5bokIXuS5vM9AMjjzEAOi\",\"email\":\"iskandar@gmail.com\",\"slug\":\"ISKANDAR-ZULKARNAIN-BIN-AZMIR\"}', '[]', 1, NULL, '2026-02-02 22:10:21'),
+(71, '148e9a98-b41e-4a4f-a2c5-1a7b6944c52e', 'create', 5, 'users', NULL, '[]', '{\"id\":5,\"fullname\":\"NURQURRATU\'AINI BINTI MOHD ROSLAN\",\"password\":\"$2y$10$QQ0Xq5lKN.LYJfKnQ\\/y34.GnxjmnW8myLB3z7lEcrm7QZomEfNVmu\",\"email\":\"aini@gmail.com\",\"slug\":\"NURQURRATU-AINI-BINTI-MOHD-ROSLAN\"}', '[]', 1, NULL, '2026-02-02 22:11:12'),
+(72, '6bf720a7-bd07-4caf-8e7a-414ca0efe027', 'update', 4, 'users', NULL, '{\"status\":\"0\"}', '{\"status\":1}', '[]', 1, NULL, '2026-02-02 22:11:31'),
+(73, '03594ee9-e710-43fb-8464-6ec2c10b5dd9', 'update', 4, 'users', NULL, '{\"is_email_verified\":0}', '{\"is_email_verified\":1}', '[]', 1, NULL, '2026-02-02 22:11:35'),
+(74, '6e6a3241-1fb0-46a7-bbf1-e873685c8679', 'update', 5, 'users', NULL, '{\"status\":\"0\"}', '{\"status\":1}', '[]', 1, NULL, '2026-02-02 22:11:46'),
+(75, '6b65af31-fd51-4a74-ad4f-5b9826bf48a8', 'update', 5, 'users', NULL, '{\"is_email_verified\":0}', '{\"is_email_verified\":1}', '[]', 1, NULL, '2026-02-02 22:11:50');
 
 -- --------------------------------------------------------
 
@@ -529,7 +553,7 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `system_name`, `system_abbr`, `system_slogan`, `organization_name`, `domain_name`, `email`, `notification_email`, `meta_title`, `meta_keyword`, `meta_subject`, `meta_copyright`, `meta_desc`, `timezone`, `author`, `site_status`, `user_reg`, `config_2`, `config_3`, `version`, `private_key_from_recaptcha`, `public_key_from_recaptcha`, `banned_username`, `telegram_bot_token`, `telegram_chatid`, `hcaptcha_sitekey`, `hcaptcha_secretkey`, `notification`, `notification_status`, `notification_date`, `ribbon_title`, `ribbon_link`, `ribbon_status`, `created`, `modified`) VALUES
-('recrud', 'Program Professional Offered', 'PPOAPPOINTMENT UiTM', 'Code The Experiences', 'Code The Pixel Inc.', 'codethepixel.com', 'noreply@codethepixel.com', 'noreply@codethepixel.com', 'Re-CRUD', 'Re-CRUD, CakePHP, Learning, CRUD', 'Re-CRUD', 'Re-CRUD', 'Re-CRUD', 'Asia/Kuala_Lumpur', 'Re-CRUD', 0, 0, 0, 0, '1.1', '', '', NULL, '', '', '', '', '<p><strong>Server maintenance</strong> is scheduled to be executed on Jan 1, 2023, from 1.00 am to 4.00 am. An intermittent connection is expected during the server maintenance period.</p>', 0, '2022-11-07', 'Code The Pixel', 'https://codethepixel.com', 0, '2020-04-08 20:56:04', '2026-01-26 15:31:52');
+('recrud', 'Program Professional Offered', 'PPOAPPOINTMENT UiTM', 'Empowering UiTM’s professional programs through smart scheduling and seamless access', 'Universiti Teknologi Mara ', 'UiTM', 'support@uitm.edu.my', 'noreply@uitm.edu.my', 'Re-CRUD', 'Re-CRUD, CakePHP, Learning, CRUD', 'Re-CRUD', 'Re-CRUD', 'Re-CRUD', 'Asia/Kuala_Lumpur', 'Re-CRUD', 0, 0, 0, 0, '1.1', '', '', NULL, '', '', '', '', '<p><strong>Server maintenance</strong> is scheduled to be executed on Jan 1, 2023, from 1.00 am to 4.00 am. An intermittent connection is expected during the server maintenance period.</p>', 0, '2022-11-07', 'Code The Pixel', 'https://codethepixel.com', 0, '2020-04-08 20:56:04', '2026-02-02 21:18:37');
 
 -- --------------------------------------------------------
 
@@ -591,7 +615,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `user_group_id`, `fullname`, `password`, `email`, `avatar`, `avatar_dir`, `token`, `token_created_at`, `status`, `is_email_verified`, `last_login`, `ip_address`, `slug`, `created`, `modified`, `created_by`, `modified_by`) VALUES
-(1, 1, 'NURUL HANIM SYUHADA BINTI HAZMIRUDDIN SHAM', '$2y$10$OrUKHzNQUic6dFqSuG9QBeDzMbbwPz1BQXKgBKPcQyMTNdv3Z22xe', 'admin@localhost.com', 'Screenshot 2026-01-28 010829.png', 'webroot\\files\\Users\\avatar\\Administrator', NULL, '2024-07-10 20:30:04', '1', 1, '2026-02-02 01:25:19', '::1', 'Administrator', '2022-10-26 02:54:19', '2026-01-28 01:10:38', NULL, NULL);
+(1, 1, 'NURUL HANIM SYUHADA BINTI HAZMIRUDDIN SHAM', '$2y$10$OrUKHzNQUic6dFqSuG9QBeDzMbbwPz1BQXKgBKPcQyMTNdv3Z22xe', 'admin@localhost.com', 'Screenshot 2026-01-28 010829.png', 'webroot\\files\\Users\\avatar\\Administrator', NULL, '2024-07-10 20:30:04', '1', 1, '2026-02-02 22:24:04', '::1', 'Administrator', '2022-10-26 02:54:19', '2026-01-28 01:10:38', NULL, NULL),
+(2, 3, 'AISYAH NADHIRAH BINTI AHAMAD KHAIRI', '$2y$10$kPuSBnw2zTu0au5SqVj3/O/uv8BvVGir3CRM1ihsGvBZ0HlJouSNa', 'aisyah@gmail.com', NULL, NULL, NULL, '0000-00-00 00:00:00', '1', 1, NULL, NULL, 'AISYAH-NADHIRAH-BINTI-AHAMAD-KHAIRI', '2026-02-02 21:11:50', '2026-02-02 21:12:18', NULL, NULL),
+(3, 3, 'MUHAMMAD ZHARIF HANAFI BIN ZULKIFLI', '$2y$10$2qfomMFbW3YOICWsKLT1jOkpVL01HffxC5vC8CGkIMxS7le8kh8C2', 'zharif@gmail.com', NULL, NULL, NULL, '0000-00-00 00:00:00', '1', 1, NULL, NULL, 'MUHAMMAD-ZHARIF-HANAFI-BIN-ZULKIFLI', '2026-02-02 21:27:37', '2026-02-02 21:28:29', NULL, NULL),
+(4, 3, 'ISKANDAR ZULKARNAIN BIN AZMIR', '$2y$10$TTh8fXwhQkDsbOs5e8aMluQ8ALpX5TpE5bokIXuS5vM9AMjjzEAOi', 'iskandar@gmail.com', NULL, NULL, NULL, '0000-00-00 00:00:00', '1', 1, NULL, NULL, 'ISKANDAR-ZULKARNAIN-BIN-AZMIR', '2026-02-02 22:10:21', '2026-02-02 22:11:35', NULL, NULL),
+(5, 3, 'NURQURRATU\'AINI BINTI MOHD ROSLAN', '$2y$10$QQ0Xq5lKN.LYJfKnQ/y34.GnxjmnW8myLB3z7lEcrm7QZomEfNVmu', 'aini@gmail.com', NULL, NULL, NULL, '0000-00-00 00:00:00', '1', 1, '2026-02-02 22:35:43', '::1', 'NURQURRATU-AINI-BINTI-MOHD-ROSLAN', '2026-02-02 22:11:12', '2026-02-02 22:11:50', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -645,7 +673,18 @@ INSERT INTO `user_logs` (`id`, `user_id`, `action`, `useragent`, `os`, `ip`, `ho
 (2, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-01-27 15:15:53', '2026-01-27 15:15:53'),
 (3, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 01:23:47', '2026-02-02 01:23:47'),
 (4, 1, 'Logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', 'http://localhost/ppoappointment/dashboards/', 1, '2026-02-02 01:24:49', '2026-02-02 01:24:49'),
-(5, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 01:25:19', '2026-02-02 01:25:19');
+(5, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 01:25:19', '2026-02-02 01:25:19'),
+(6, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 04:10:09', '2026-02-02 04:10:09'),
+(7, 1, 'Logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', 'http://localhost/ppoappointment/admin?redirect=%2Fusers%2Flogout', 1, '2026-02-02 04:10:10', '2026-02-02 04:10:10'),
+(8, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 04:10:18', '2026-02-02 04:10:18'),
+(9, 1, 'Logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', 'http://localhost/ppoappointment/applications/add', 1, '2026-02-02 22:16:18', '2026-02-02 22:16:18'),
+(10, 5, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 22:16:36', '2026-02-02 22:16:36'),
+(11, 5, 'Logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', 'http://localhost/ppoappointment/applications', 1, '2026-02-02 22:19:07', '2026-02-02 22:19:07'),
+(12, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 22:19:13', '2026-02-02 22:19:13'),
+(13, 1, 'Logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', 'http://localhost/ppoappointment/admin/users/profile/Administrator', 1, '2026-02-02 22:21:02', '2026-02-02 22:21:02'),
+(14, 1, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 22:24:04', '2026-02-02 22:24:04'),
+(15, 1, 'Logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', 'http://localhost/ppoappointment/dashboard', 1, '2026-02-02 22:27:27', '2026-02-02 22:27:27'),
+(16, 5, 'Login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0', 'build 26200 (Windows 11)', '::1', 'Eve', NULL, 1, '2026-02-02 22:35:43', '2026-02-02 22:35:43');
 
 --
 -- Indexes for dumped tables
@@ -757,7 +796,7 @@ ALTER TABLE `user_logs`
 -- AUTO_INCREMENT for table `applications`
 --
 ALTER TABLE `applications`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `appointments`
@@ -769,7 +808,7 @@ ALTER TABLE `appointments`
 -- AUTO_INCREMENT for table `audit_logs`
 --
 ALTER TABLE `audit_logs`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT for table `branches`
@@ -805,7 +844,7 @@ ALTER TABLE `programs`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user_groups`
@@ -817,7 +856,7 @@ ALTER TABLE `user_groups`
 -- AUTO_INCREMENT for table `user_logs`
 --
 ALTER TABLE `user_logs`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
