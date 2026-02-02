@@ -1,166 +1,142 @@
+# PPOAPPOINTMENT UiTM
+
+A web-based system for managing UiTM’s **Program Professional Offered (PPO)** placements. Built using the **CakePHP** framework and powered by **Re-CRUD 2.X**, this platform streamlines application workflows, user management, audit tracking, and more—tailored for academic and administrative excellence.
+
 ![Logo](https://github.com/Asyraf-wa/recrud/blob/2.x/webroot/img/ss/reCRUD_Logo.jpg)
 
-Re-CRUD 2.X enable the developer to create the fundamental web application functions, create, read, update and delete including the other features such as searching, reporting, audit trail and others. Re-CRUD is based on the CakePHP framework with integrated useful plugins.
+---
 
-## 🚀 Authors
+## ✨ Overview
 
--   [@Asyraf Wahi Anuar](https://github.com/Asyraf-wa)
+This system is designed to support UiTM’s PPO placement lifecycle, allowing administrators and students to manage applications, track statuses, and generate official documentation. It integrates core CRUD operations with advanced features like search, reporting, audit trail, and site configuration.
 
-## License
+---
 
-[MIT](https://choosealicense.com/licenses/mit/)
+## 🚀 Author
 
-## Framework and Plugin Acknowledgements
+- [@Asyraf Wahi Anuar](https://github.com/Asyraf-wa)
 
--   [CakePHP](https://cakephp.org)
--   [Bootstrap](https://getbootstrap.com)
--   [jQuery](https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js)
--   [Search Plugin](https://github.com/FriendsOfCake/search)
--   [Tools Plugin](https://github.com/dereuromark/cakephp-tools)
--   [Upload Plugin](https://github.com/FriendsOfCake/cakephp-upload)
--   [CakePDF Plugin](https://github.com/FriendsOfCake/CakePdf)
--   [CSVview Plugin](https://github.com/FriendsOfCake/cakephp-csvview)
--   [Authentication Plugin](https://github.com/cakephp/authentication)
--   [README Generator](https://readme.so/editor)
+---
 
-## Features
+## 📦 Framework & Plugins
 
--   [x] CRUD with [Sneat] Bootstrap 5 template
--   [x] User management and profile
--   [x] Search / Filter
--   [x] QR Code for sharing
--   [x] Audit Trail
--   [x] FAQ
--   [x] To Do list / task
--   [x] Site Configuration
--   [x] Contact us
--   [x] Light/dark mode toggle ~~[coming soon]~~
--   [ ] ReCrudZero [coming soon]
--   [ ] Archived [coming soon]
--   [x] Notification bar
--   [x] Promotion Ribbon
--   [ ] Menu Management [coming soon]
+- [CakePHP](https://cakephp.org)  
+- [Bootstrap](https://getbootstrap.com)  
+- [jQuery](https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js)  
+- [Search Plugin](https://github.com/FriendsOfCake/search)  
+- [Tools Plugin](https://github.com/dereuromark/cakephp-tools)  
+- [Upload Plugin](https://github.com/FriendsOfCake/cakephp-upload)  
+- [CakePDF Plugin](https://github.com/FriendsOfCake/CakePdf)  
+- [CSVview Plugin](https://github.com/FriendsOfCake/cakephp-csvview)  
+- [Authentication Plugin](https://github.com/cakephp/authentication)
 
-## Screenshots
+---
 
-![App Screenshot](https://github.com/Asyraf-wa/recrud/blob/2.x/webroot/img/ss/ReCRUD_Dashboard.png)
+## 🔧 Features
 
-![App Screenshot](https://github.com/Asyraf-wa/recrud/blob/2.x/webroot/img/ss/ReCRUD_Setting.png)
+- ✅ CRUD with Sneat Bootstrap 5 template  
+- ✅ User management & profile  
+- ✅ Search & filter  
+- ✅ QR code sharing  
+- ✅ Audit trail  
+- ✅ FAQ & Contact Us  
+- ✅ To Do task manager  
+- ✅ Site configuration  
+- ✅ Notification bar & promotion ribbon  
+- 🌓 Light/dark mode toggle *(coming soon)*  
+- 🧩 ReCrudZero & Menu Management *(coming soon)*  
+- 📦 Archived module *(coming soon)*  
 
-## Roadmap
+---
 
--   Additional records management features
--   More details reporting pages
--   Add more integrations
+## 📸 Screenshots
 
-## Contributing
+ <img width="2443" height="1145" alt="image" src="https://github.com/user-attachments/assets/6ea88d74-9ff9-44dc-8fc8-74f2734d23e5" />
+ <img width="2547" height="1138" alt="image" src="https://github.com/user-attachments/assets/dcc09580-310f-4b66-b674-0f688bd70e22" />
+<img width="2495" height="1191" alt="image" src="https://github.com/user-attachments/assets/63895554-1528-47a3-b375-23c4bb5baccc" />
 
-Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
 
-Please adhere to this project's `code of conduct`.
+---
 
-## Documentation
+## 🗄️ Database Setup (Assignment Version)
 
-[Documentation](https://codethepixel.com) (Coming Soon)
+This system uses **MySQL**. For assignment purposes, simply import the provided SQL file.
 
-## Installation
+### 📥 Import Instructions
+1. Open **phpMyAdmin** via XAMPP/WAMP/MAMP.
+2. Create a new database named: ppoappointment
+3. Go to the **Import** tab.  
+4. Select the file:database/ppoappointment.sql
+5. Click **Go** to import all tables and data.
 
-Clone Re-CRUD repo
+---
 
-```bash
-  composer create-project recrud/recrud
-```
+### 🔐 Default Login
+admin login : admin@localhost.com password :123456
 
-or
 
-```bash
-  git clone https://github.com/Asyraf-wa/recrud.git
-```
+**existing user login :**
+1. aini@gmail.com password :abcd1234
+2. zharif@gmail.com password : abcd1234
+3. aisyah@gmail.com passwword :abcd1234
+4. iskandar@gmail.com password :abcd1234
 
-Run composer update
+---
 
-```bash
-  composer update
-```
+### 📊 Database Structure
 
-## Configuration
+The `ppoappointment` database contains 15 tables:
 
-Rename file `app_local_example.php` to `app_local.php` in `config` folder
+| Table Name       | Description                                                  |
+|------------------|--------------------------------------------------------------|
+| `applications`   | PPO placement applications                                   |
+| `appointments`   | Appointment slots (e.g. semester periods)                    |
+| `audit_logs`     | User activity logs                                           |
+| `branches`       | UiTM branch/campus details                                   |
+| `contacts`       | Contact Us form submissions                                  |
+| `faculties`      | UiTM faculties list                                          |
+| `faqs`           | Frequently Asked Questions                                   |
+| `menus`          | *(Coming soon)* Sidebar/menu management                      |
+| `phinxlog`       | CakePHP migration tracking                                   |
+| `programs`       | Academic programs list                                       |
+| `settings`       | System configuration values                                  |
+| `todos`          | Task management                                              |
+| `users`          | User accounts (admin, student)                               |
+| `user_groups`    | User roles and permissions                                   |
+| `user_logs`      | Login history and access records                             |
 
-Create database in `phpmyadmin`
+---
 
-Configure database
+## 🛠 Installation
 
-```bash
-    'Datasources' => [
-        'default' => [
-            'host' => 'localhost',
-            'port' => 'non_standard_port_number',
-            'username' => 'root',
-            'password' => '',
-            'database' => 'recrud',
-            'url' => env('DATABASE_URL', null),
-        ],
-```
-
-Database migration
-
-```bash
-  bin/cake migrations migrate
-```
-
-Database seeding
+Clone the repo:
 
 ```bash
-  bin/cake migrations seed
-```
+git clone https://github.com/syadhira/PPOUITM1.git
+Install dependencies:
+**composer update**
+'Datasources' => [
+    'default' => [
+        'host' => 'localhost',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'ppoappointment',
+    ],
+]
 
-Default account Info
-
-```bash
-  admin@localhost.com | 123456
-```
-
-## 🛠 Requirements
-
+🧰 Requirements
 PHP 8+
+
+MySQL 8+
 
 intl extension
 
-Table should contain attribute: status(int) 1 with default value 1. This is used to tag active records as active(1), disabled(0) and archived(2). It also will be used for reporting charts.
+SQL Mode: sql-mode = "" (edit my.ini)
 
-Set SQL Mode (Edit my.ini)
+🧑‍🤝‍🧑 Contributing
+Contributions are welcome!
+See contributing.md and follow the code of conduct.
 
-```bash
-  sql-mode = ""
-```
-
-## 🔗 Webserver Links
-
-[![XAMPP](https://img.shields.io/badge/XAMPP-000?style=for-the-badge&logoColor=white)](https://www.apachefriends.org/download.html)
-[![WAMP](https://img.shields.io/badge/WAMP-0A66C2?style=for-the-badge&logoColor=white)](https://www.wampserver.com/en/)
-[![MAMP](https://img.shields.io/badge/MAMP-1DA1F2?style=for-the-badge&logoColor=white)](https://www.mamp.info/en/windows/)
-
-## Usage/Examples
-
-Generate CRUD with ReCrud features:
-
-```php
-bin/cake bake all tableName
-```
-
-Generate CRUD without ReCrud features:
-
-```php
-bin/cake bake all tableName --theme ReCrudZero
-```
-
-## Badges
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-## Demo
-
-Coming Soon
+📜 License
+MIT License
